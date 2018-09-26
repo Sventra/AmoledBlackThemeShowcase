@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">ABTheme Showcase</string>
+    <string name="app_version" translatable="false">1.0</string>
+    <string name="app_label" translatable="false">ABT Showcase</string>
+    <string name="app_logo" translatable="false">Amoled Black Theme logo</string>
+    <string name="sventrapopizzimage" translatable="false">SventraPopizz\'s image</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Andrea De Michele</string>
+    <string name="nav_header_subtitle" translatable="false">"@SventraPopizz"</string>
+    <string name="username" translatable="false">"SventraPopizz"</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="similar_themes">Similar themes</string>
+    <string name="try_again" translatable="false">Try again</string>
+    <string name="download">Download</string>
+    <string name="view">View</string>
+
+    <string name="lastUpdate_standard">Last update: 7/28/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_au">Last update: 7/28/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_cyanogen">Last update: 8/7/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_mint">Last update: 8/3/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_orange">Last update: 8/9/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_oxygen">Last update: 8/7/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_red">Last update: 8/7/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_saints">Last update: 7/26/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_inverted">Last update: 8/9/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_inverted_inferno">Last update: 8/8/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_aospex">Last update: 7/30/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_steam">Last update: 8/8/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_monster">Last update: 8/17/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_league">Last update: 8/17/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_greenSunset">Last update: 8/24/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_pixelBlue">Last update: 9/2/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_crimson">Last update: 8/25/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_quetzal">Last update: 9/2/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_redleaf">Last update: 9/20/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_autumn">Last update: 9/23/2018 for Telegram v4.9</string>
+
+    <string name="version_standard">Download v4.9.0</string>
+    <string name="version_au">Download v4.9.0</string>
+    <string name="version_cyanogen">Download v4.9.1</string>
+    <string name="version_mint">Download v4.9.0</string>
+    <string name="version_orange">Download v4.9.0</string>
+    <string name="version_oxygen">Download v4.9.1</string>
+    <string name="version_red">Download v4.9.1</string>
+    <string name="version_saints">Download v1.0b</string>
+    <string name="version_inverted">Download v4.9.1</string>
+    <string name="version_inverted_inferno">Download v4.9.0</string>
+    <string name="version_aospex">Download v4.9.0</string>
+    <string name="version_steam">Download v4.9.0</string>
+    <string name="version_monster">Download v4.9.0</string>
+    <string name="version_league">Download v4.9.0</string>
+    <string name="version_greenSunset">Download v4.9.0</string>
+    <string name="version_pixelBlue">Download v4.9.1</string>
+    <string name="version_crimson">Download v4.9.0</string>
+    <string name="version_quetzal">Download v4.9.0</string>
+    <string name="version_redleaf">Download v4.9.0</string>
+    <string name="version_autumn">Download v4.9.0</string>
+
+    <string name="news1Date">9/23/2018</string>
+    <string name="news1Content">ABTheme Autumn v4.9.0 released</string>
+
+    <string name="news2Date">9/20/2018</string>
+    <string name="news2Content">ABTheme Redleaf v4.9.0 released</string>
+
+    <string name="news3Date">9/2/2018</string>
+    <string name="news3Content">ABTheme Quetzal Red v4.9.0 released</string>
+
+</resources>

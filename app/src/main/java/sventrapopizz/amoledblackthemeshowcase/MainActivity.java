@@ -46,6 +46,7 @@ import static sventrapopizz.amoledblackthemeshowcase.MintFragment.mintIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.MonsterFragment.monsterIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.OrangeFragment.orangeIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.OxygenFragment.oxygenIsInFront;
+import static sventrapopizz.amoledblackthemeshowcase.PhloxFragment.phloxIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.PixelFragment.pixelIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.QuetzalFragment.quetzallIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.RedFragment.redIsInFront;
@@ -304,6 +305,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openThemePage(new OxygenFragment(), R.id.nav_oxygen);
     }
 
+    public void openPhlox(View view) {
+        openThemePage(new PhloxFragment(), R.id.nav_phlox);
+    }
+
     public void openPixelBlue(View view) {
         openThemePage(new PixelFragment(), R.id.nav_pixelBlue);
     }
@@ -455,6 +460,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 navigationView.setCheckedItem(R.id.nav_orange);
             } else if (oxygenIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_oxygen);
+            } else if (phloxIsInFront) {
+                navigationView.setCheckedItem(R.id.nav_phlox);
             } else if (pixelIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_pixelBlue);
             } else if (quetzallIsInFront) {

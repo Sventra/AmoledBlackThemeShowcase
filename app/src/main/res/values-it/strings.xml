@@ -27,8 +27,8 @@
     <string name="version_steam">Scarica la v4.9.0</string>
     <string name="news1Content">ABTheme Autumn v4.9.0 rilasciato</string>
     <string name="news2Content">ABTheme Redleaf v4.9.0 rilasciato</string>
-    <string name="news1Date">23/9/2018</string>
-    <string name="news2Date">20/9/2018</string>
+    <string name="news1Date">01/10/2018</string>
+    <string name="news2Date">23/9/2018</string>
     <string name="similar_themes">Temi simili</string>
     <string name="lastUpdate_monster">Ultimo aggiornamento: 17/8/2018 per Telegram v4.9</string>
     <string name="version_monster">Scarica la v4.9.0</string>
@@ -43,11 +43,13 @@
     <string name="version_pixelBlue">Scarica la v4.9.1</string>
     <string name="version_crimson">Scarica la v4.9.0</string>
     <string name="news3Content">ABTheme Quetzal Red v4.9.0 rilasciato</string>
-    <string name="news3Date">2/9/2018</string>
+    <string name="news3Date">20/9/2018</string>
     <string name="version_quetzal">Scarica la v4.9.0</string>
     <string name="lastUpdate_quetzal">Ultimo aggiornamento: 2/9/2018 per Telegram v4.9</string>
     <string name="version_redleaf">Scarica la v4.9.0</string>
     <string name="lastUpdate_redleaf">Ultimo aggiornamento: 20/9/2018 per Telegram v4.9</string>
     <string name="lastUpdate_autumn">Ultimo aggiornamento: 23/9/2018 per Telegram v4.9</string>
     <string name="version_autumn">Scarica la v4.9.0</string>
+    <string name="version_phlox">Scarica la v4.9.0</string>
+    <string name="lastUpdate_phlox">Ultimo aggiornamento: 01/10/2018 per Telegram v4.9</string>
 </resources>

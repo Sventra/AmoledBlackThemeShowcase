@@ -36,6 +36,7 @@
     <string name="lastUpdate_quetzal">Last update: 9/2/2018 for Telegram v4.9</string>
     <string name="lastUpdate_redleaf">Last update: 9/20/2018 for Telegram v4.9</string>
     <string name="lastUpdate_autumn">Last update: 9/23/2018 for Telegram v4.9</string>
+    <string name="lastUpdate_phlox">Last update: 10/01/2018 for Telegram v4.9</string>
 
     <string name="version_standard">Download v4.9.0</string>
     <string name="version_au">Download v4.9.0</string>
@@ -57,14 +58,15 @@
     <string name="version_quetzal">Download v4.9.0</string>
     <string name="version_redleaf">Download v4.9.0</string>
     <string name="version_autumn">Download v4.9.0</string>
+    <string name="version_phlox">Download v4.9.0</string>
 
-    <string name="news1Date">9/23/2018</string>
-    <string name="news1Content">ABTheme Autumn v4.9.0 released</string>
+    <string name="news1Date">10/01/2018</string>
+    <string name="news1Content">ABTheme Phlox v4.9.0 released</string>
 
-    <string name="news2Date">9/20/2018</string>
-    <string name="news2Content">ABTheme Redleaf v4.9.0 released</string>
+    <string name="news2Date">9/23/2018</string>
+    <string name="news2Content">ABTheme Autumn v4.9.0 released</string>
 
-    <string name="news3Date">9/2/2018</string>
-    <string name="news3Content">ABTheme Quetzal Red v4.9.0 released</string>
+    <string name="news3Date">9/20/2018</string>
+    <string name="news3Content">ABTheme Redleaf Red v4.9.0 released</string>
 
 </resources>

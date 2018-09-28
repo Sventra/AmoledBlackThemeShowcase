@@ -25,10 +25,10 @@
     <string name="version_red">Скачать v4.9.1</string>
     <string name="version_oxygen">Скачать v4.9.1</string>
     <string name="version_cyanogen">Скачать v4.9.1</string>
-    <string name="news1Content">ABTheme Autumn v4.9.0 выпущенный</string>
-    <string name="news2Content">ABTheme Redleaf v4.9.0 выпущенный</string>
-    <string name="news1Date">23/9/2018</string>
-    <string name="news2Date">20/9/2018</string>
+    <string name="news1Content">ABTheme Phlox v4.9.0 выпущенный</string>
+    <string name="news2Content">ABTheme Autumn v4.9.0 выпущенный</string>
+    <string name="news1Date">01/10/2018</string>
+    <string name="news2Date">23/9/2018</string>
     <string name="similar_themes">Похожие темы</string>
     <string name="lastUpdate_monster">Последнее обновление: 17/8/2018 для Telegram v4.9</string>
     <string name="version_monster">Скачать v4.9.0</string>
@@ -42,12 +42,14 @@
     <string name="lastUpdate_crimson">Последнее обновление: 25/8/2018 для Telegram v4.9</string>
     <string name="version_pixelBlue">Скачать v4.9.1</string>
     <string name="version_crimson">Скачать v4.9.0</string>
-    <string name="news3Date">2/9/2018</string>
-    <string name="news3Content">ABTheme Quetzal Red v4.9.0 выпущенный</string>
+    <string name="news3Date">20/9/2018</string>
+    <string name="news3Content">ABTheme Redleaf v4.9.0 выпущенный</string>
     <string name="version_quetzal">Скачать v4.9.0</string>
     <string name="lastUpdate_quetzal">Последнее обновление: 2/9/2018 для Telegram v4.9</string>
     <string name="version_redleaf">Скачать v4.9.0</string>
     <string name="lastUpdate_redleaf">Последнее обновление: 20/9/2018 для Telegram v4.9</string>
     <string name="lastUpdate_autumn">Последнее обновление: 23/9/2018 для Telegram v4.9</string>
     <string name="version_autumn">Скачать v4.9.0</string>
+    <string name="version_phlox">Скачать v4.9.0</string>
+    <string name="lastUpdate_phlox">Последнее обновление: 01/10/2018 для Telegram v4.9</string>
 </resources>

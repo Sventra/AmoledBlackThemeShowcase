@@ -252,6 +252,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setCheckedItem(nav);
     }
 
+    public void openHome(View view) {
+        openThemePage(new HomeFragment(), R.id.nav_home);
+    }
+
     public void openSettings() {
         openThemePage(new SettingsFragment(), R.id.nav_home);
     }
@@ -324,6 +328,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openThemePage(new SteamFragment(), R.id.nav_steam);
     }
 
+    public void openAospEx(View view) {
+        openThemePage(new SteamFragment(), R.id.nav_aospex);
+    }
+
     public void openInverted(View view) {
         openThemePage(new InvertedFragment(), R.id.nav_inverted);
     }
@@ -338,7 +346,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Uri uri;
         switch (item.getItemId()) {
             case R.id.nav_home:
-                getSupportFragmentManager().beginTransaction().addToBackStack(root).replace(R.id.fragment_container, new HomeFragment()).commit();
+                openHome(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_standard:
                 openStandard(findViewById(R.id.fragment_container));
@@ -386,10 +394,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 openRedleaf(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_saints:
-                getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.fragment_container, new SaintsFragment()).commit();
+                openSaints(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_steam:
-                getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.fragment_container, new SteamFragment()).commit();
+                openSteam(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_inverted:
                 openInverted(findViewById(R.id.fragment_container));
@@ -398,7 +406,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 openInvertedInferno(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_aospex:
-                getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.fragment_container, new AospExFragment()).commit();
+                openAospEx(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_openchannel:
                 uri = Uri.parse("https://t.me/ABTheme");

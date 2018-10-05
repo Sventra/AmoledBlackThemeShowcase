@@ -85,8 +85,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     boolean internet_connection() {
         //Check if connected to internet, output accordingly
         boolean isConnected;
-        ConnectivityManager cm =
-                (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager cm = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
 
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         isConnected = activeNetwork != null /*&& activeNetwork.isConnectedOrConnecting()*/;

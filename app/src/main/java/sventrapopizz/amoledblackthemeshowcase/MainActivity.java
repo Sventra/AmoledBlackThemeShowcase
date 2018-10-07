@@ -5,7 +5,6 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -23,14 +22,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.squareup.picasso.Picasso;
-
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.io.Writer;
 import java.util.concurrent.ExecutionException;
 
 import static sventrapopizz.amoledblackthemeshowcase.AospExFragment.aospIsInFront;
@@ -76,11 +68,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Uri uri = Uri.parse("https://t.me/ABTheme");
         newIntent(uri);
     }
-
+    // This method will open the chat with myself
     public void contactMe(View view) {
         Uri uri = Uri.parse("https://t.me/SventraPopizz");
         newIntent(uri);
     }
+
 
     boolean internet_connection() {
         //Check if connected to internet, output accordingly
@@ -106,22 +99,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-        outdated = new Dialog(this);
-        try {
-            PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
-            int verCode = pInfo.versionCode;
-            if (internet_connection()) {
-                String newVersString = (String) new RetriveFeedTask2().execute().get();
-                int newVers = Integer.parseInt(newVersString);
-                if (verCode < newVers) {
-                    showPopup();
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -137,34 +114,52 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navigationView.setCheckedItem(R.id.nav_home);
         }
 
+        // Check for app version
+        showPopup();
+
         Thread megaMethod = new Thread() {
             public void run() {
+
                 metodone();
             }
         };
         megaMethod.start();
     }
 
+    // Method to check if the app is updated or not
     public void showPopup() {
-        TextView txtclose;
-        Button btnOpen;
-        outdated.setContentView(R.layout.outdatedpopup);
-        txtclose = (TextView) outdated.findViewById(R.id.txtclose);
-        btnOpen = (Button) outdated.findViewById(R.id.buttonUpdate);
-        btnOpen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=sventrapopizz.amoledblackthemeshowcase");
-                newIntent(uri);
+        outdated = new Dialog(this);
+        try {
+            PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
+            int verCode = pInfo.versionCode;
+            if (internet_connection()) {
+                String newVersString = (String) new RetriveFeedTask2().execute().get(); // This will acquire from a specific message in a telegram channel, the most up to date version of the app
+                int newVers = Integer.parseInt(newVersString);
+                if (verCode < newVers) {
+                    TextView txtclose;
+                    Button btnOpen;
+                    outdated.setContentView(R.layout.outdatedpopup);
+                    txtclose = (TextView) outdated.findViewById(R.id.txtclose);
+                    btnOpen = (Button) outdated.findViewById(R.id.buttonUpdate);
+                    btnOpen.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=sventrapopizz.amoledblackthemeshowcase");
+                            newIntent(uri);
+                        }
+                    });
+                    txtclose.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            outdated.dismiss();
+                        }
+                    });
+                    outdated.show();
+                }
             }
-        });
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                outdated.dismiss();
-            }
-        });
-        outdated.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void metodone() {

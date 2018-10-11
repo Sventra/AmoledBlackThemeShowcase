@@ -46,6 +46,7 @@ import static sventrapopizz.amoledblackthemeshowcase.RedleafFragment.redleafIsIn
 import static sventrapopizz.amoledblackthemeshowcase.SaintsFragment.saintsIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.StandardFragment.standardIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.SteamFragment.steamIsInFront;
+import static sventrapopizz.amoledblackthemeshowcase.TealFragment.tealIsInFront;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
@@ -327,8 +328,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openThemePage(new SteamFragment(), R.id.nav_steam);
     }
 
+    public void openTeal(View view) {
+        openThemePage(new TealFragment(), R.id.nav_teal);
+    }
+
     public void openAospEx(View view) {
-        openThemePage(new SteamFragment(), R.id.nav_aospex);
+        openThemePage(new AospExFragment(), R.id.nav_aospex);
     }
 
     public void openInverted(View view) {
@@ -398,6 +403,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_steam:
                 openSteam(findViewById(R.id.fragment_container));
                 break;
+            case R.id.nav_teal:
+                openTeal(findViewById(R.id.fragment_container));
+                break;
             case R.id.nav_inverted:
                 openInverted(findViewById(R.id.fragment_container));
                 break;
@@ -466,6 +474,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 navigationView.setCheckedItem(R.id.nav_redleaf);
             } else if (saintsIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_saints);
+            } else if (tealIsInFront) {
+                navigationView.setCheckedItem(R.id.nav_teal);
             } else if (invertedIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_inverted);
             } else if (invertedInfIsInFront) {

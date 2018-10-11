@@ -88,6 +88,10 @@
             android:id="@+id/nav_saints"
             android:icon="@drawable/ic_square_saints"
             android:title="Saints" />
+        <item
+            android:id="@+id/nav_teal"
+            android:icon="@drawable/ic_square_teal"
+            android:title="Teal" />
     </group>
 
     <group android:enabled="false">

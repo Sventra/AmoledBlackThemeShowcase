@@ -81,7 +81,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         boolean isConnected;
         ConnectivityManager cm = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
 
-        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        NetworkInfo activeNetwork = null;
+        if (cm != null) {
+            activeNetwork = cm.getActiveNetworkInfo();
+        }
         isConnected = activeNetwork != null /*&& activeNetwork.isConnectedOrConnecting()*/;
         try {
             stringaTemi = (String) new RetriveFeedTask().execute().get();

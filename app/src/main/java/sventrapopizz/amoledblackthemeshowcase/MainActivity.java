@@ -251,7 +251,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openStandard(View view) {
-        openThemePage(new StandardFragment(), R.id.nav_standard);
+        openNavigation(new StandardFragment());
     }
 
     public void openAutumn(View view) {
@@ -264,14 +264,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         displaySelectedFragment(fragment, this, "invertedInferno");*/
     }
 
-    public void openCyanogen(View view) {openThemePage(new CyanogenFragment(), R.id.nav_cyanogen);}
+    public void openCyanogen(View view) {openNavigation(new CyanogenFragment());}
 
     public void openCrimson(View view) {
         openNavigation(new CrimsonFragment());
     }
 
     public void openGreenSunset(View view) {
-        openThemePage(new GreenSunsetFragment(), R.id.nav_greenSunset);
+        openNavigation(new GreenSunsetFragment());
     }
 
     public void openLeague(View view) {
@@ -279,11 +279,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openMint(View view) {
-        openThemePage(new MintFragment(), R.id.nav_mint);
+        openNavigation(new MintFragment());
     }
 
     public void openMonster(View view) {
-        openThemePage(new MonsterFragment(), R.id.nav_monster);
+        openNavigation(new MonsterFragment());
     }
 
     public void openOrange(View view) {
@@ -291,7 +291,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openOxygen(View view) {
-        openThemePage(new OxygenFragment(), R.id.nav_oxygen);
+        openNavigation(new OxygenFragment());
     }
 
     public void openPhlox(View view) {
@@ -299,7 +299,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openPixelBlue(View view) {
-        openThemePage(new PixelFragment(), R.id.nav_pixelBlue);
+        openNavigation(new PixelFragment());
     }
 
     public void openQuetzal(View view) {
@@ -323,7 +323,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openTeal(View view) {
-        openThemePage(new TealFragment(), R.id.nav_teal);
+        openNavigation(new TealFragment());
     }
 
     public void openAospEx(View view) {

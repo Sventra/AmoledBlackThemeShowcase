@@ -12,9 +12,11 @@
             android:title="Home" />
     </group>
 
-    <group android:enabled="false">
-        <item android:title="Pure black themes">
-        </item>
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_home"
+            android:title="Pure black themes" />
     </group>
 
     <group
@@ -22,75 +24,45 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_standard"
-            android:icon="@drawable/ic_square_standard"
             android:title="Standard" />
         <item
             android:id="@+id/nav_au"
-            android:icon="@drawable/ic_square_au"
             android:title="Au" />
         <item
             android:id="@+id/nav_autumn"
-            android:icon="@drawable/ic_square_au"
             android:title="Autumn" />
         <item
-            android:id="@+id/nav_crimson"
-            android:icon="@drawable/ic_square_crimson"
-            android:title="Crimson" />
-        <item
             android:id="@+id/nav_cyanogen"
-            android:icon="@drawable/ic_square_cyanogen"
             android:title="Cyanogen" />
         <item
             android:id="@+id/nav_greenSunset"
-            android:icon="@drawable/ic_square_greensunset"
             android:title="Green Sunset" />
         <item
             android:id="@+id/nav_league"
-            android:icon="@drawable/ic_square_league"
             android:title="LoL Chat" />
         <item
             android:id="@+id/nav_mint"
-            android:icon="@drawable/ic_square_mint"
             android:title="Mint" />
         <item
             android:id="@+id/nav_monster"
-            android:icon="@drawable/ic_square_monster"
             android:title="Monster" />
         <item
             android:id="@+id/nav_orange"
-            android:icon="@drawable/ic_square_orange"
             android:title="Orange" />
         <item
             android:id="@+id/nav_oxygen"
-            android:icon="@drawable/ic_square_oxygen"
             android:title="Oxygen" />
         <item
             android:id="@+id/nav_phlox"
-            android:icon="@drawable/ic_square_phlox"
             android:title="Phlox" />
         <item
             android:id="@+id/nav_pixelBlue"
-            android:icon="@drawable/ic_square_pixel"
             android:title="Pixel Blue" />
         <item
-            android:id="@+id/nav_quetzalRed"
-            android:icon="@drawable/ic_square_quetzal"
-            android:title="Quetzal Red" />
-        <item
-            android:id="@+id/nav_red"
-            android:icon="@drawable/ic_square_red"
-            android:title="Red" />
-        <item
-            android:id="@+id/nav_redleaf"
-            android:icon="@drawable/ic_square_redleaf"
-            android:title="Redleaf" />
-        <item
             android:id="@+id/nav_saints"
-            android:icon="@drawable/ic_square_saints"
             android:title="Saints" />
         <item
             android:id="@+id/nav_teal"
-            android:icon="@drawable/ic_square_teal"
             android:title="Teal" />
     </group>
 
@@ -105,11 +77,9 @@
 
         <item
             android:id="@+id/nav_inverted"
-            android:icon="@drawable/ic_square_inverted"
             android:title="Inverted" />
         <item
             android:id="@+id/nav_inverted_inferno"
-            android:icon="@drawable/ic_square_inverted_inferno"
             android:title="Inverted Inferno" />
     </group>
 
@@ -124,11 +94,9 @@
 
         <item
             android:id="@+id/nav_aospex"
-            android:icon="@drawable/ic_square_aospex"
             android:title="AOSPExtended" />
         <item
             android:id="@+id/nav_steam"
-            android:icon="@drawable/ic_square_steam"
             android:title="Steam" />
     </group>
 

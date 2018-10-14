@@ -27,7 +27,6 @@ import java.util.concurrent.ExecutionException;
 
 import static sventrapopizz.amoledblackthemeshowcase.AospExFragment.aospIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.AuFragment.auIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.CrimsonFragment.crimsonIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.CyanogenFragment.cyanoIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.GreenSunsetFragment.greenSunIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.HomeFragment.isInFront;
@@ -40,9 +39,6 @@ import static sventrapopizz.amoledblackthemeshowcase.OrangeFragment.orangeIsInFr
 import static sventrapopizz.amoledblackthemeshowcase.OxygenFragment.oxygenIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.PhloxFragment.phloxIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.PixelFragment.pixelIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.QuetzalFragment.quetzallIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.RedFragment.redIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.RedleafFragment.redleafIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.SaintsFragment.saintsIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.StandardFragment.standardIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.SteamFragment.steamIsInFront;
@@ -86,13 +82,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             activeNetwork = cm.getActiveNetworkInfo();
         }
         isConnected = activeNetwork != null /*&& activeNetwork.isConnectedOrConnecting()*/;
-        try {
-            stringaTemi = (String) new RetriveFeedTask().execute().get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
+
         return isConnected;
     }
 
@@ -120,7 +110,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Check for app version
         showPopup();
-
         Thread megaMethod = new Thread() {
             public void run() {
 
@@ -133,6 +122,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     // Method to check if the app is updated or not
     public void showPopup() {
         outdated = new Dialog(this);
+        boolean connected=false;
         try {
             PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
             int verCode = pInfo.versionCode;
@@ -167,7 +157,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void metodone() {
-        internet_connection();
         Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), "", Snackbar.LENGTH_SHORT);
         try {
             if (internet_connection()) {
@@ -251,8 +240,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setCheckedItem(nav);
     }
 
+    public void openNavigation(Fragment fragment) {
+        if (getSupportFragmentManager().getBackStackEntryCount() > 5){
+            getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        }
+        getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.fragment_container, fragment).commit();
+    }
+
     public void openHome(View view) {
         openThemePage(new HomeFragment(), R.id.nav_home);
+    }
+
+    public void openNavPureBlack(View view) {
+        openNavigation(new NavigationPureBlackFragment());
     }
 
     public void openSettings() {
@@ -276,7 +276,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void openCyanogen(View view) {openThemePage(new CyanogenFragment(), R.id.nav_cyanogen);}
 
     public void openCrimson(View view) {
-        openThemePage(new CrimsonFragment(), R.id.nav_crimson);
+        openNavigation(new CrimsonFragment());
     }
 
     public void openGreenSunset(View view) {
@@ -312,15 +312,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openQuetzal(View view) {
-        openThemePage(new QuetzalFragment(), R.id.nav_quetzalRed);
+        openNavigation(new QuetzalFragment());
     }
 
     public void openRed(View view) {
-        openThemePage(new RedFragment(), R.id.nav_red);
+        openNavigation(new RedFragment());
     }
 
     public void openRedleaf(View view) {
-        openThemePage(new RedleafFragment(), R.id.nav_redleaf);
+        openNavigation(new RedleafFragment());
     }
 
     public void openSaints(View view) {
@@ -355,6 +355,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_home:
                 openHome(findViewById(R.id.fragment_container));
                 break;
+            case R.id.navigation_home:
+                openNavPureBlack(findViewById(R.id.fragment_container));
+                break;
             case R.id.nav_standard:
                 openStandard(findViewById(R.id.fragment_container));
                 break;
@@ -366,9 +369,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_cyanogen:
                 openCyanogen(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_crimson:
-                openCrimson(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_greenSunset:
                 openGreenSunset(findViewById(R.id.fragment_container));
@@ -390,15 +390,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_pixelBlue:
                 openPixelBlue(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_quetzalRed:
-                openQuetzal(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_red:
-                openRed(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_redleaf:
-                openRedleaf(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_saints:
                 openSaints(findViewById(R.id.fragment_container));
@@ -449,8 +440,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 navigationView.setCheckedItem(R.id.nav_standard);
             } else if (auIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_au);
-            } else if (crimsonIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_crimson);
             } else if (cyanoIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_cyanogen);
             } else if (greenSunIsInFront) {
@@ -469,12 +458,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 navigationView.setCheckedItem(R.id.nav_phlox);
             } else if (pixelIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_pixelBlue);
-            } else if (quetzallIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_quetzalRed);
-            } else if (redIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_red);
-            } else if (redleafIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_redleaf);
             } else if (saintsIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_saints);
             } else if (tealIsInFront) {

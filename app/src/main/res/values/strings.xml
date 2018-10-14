@@ -63,12 +63,6 @@
     <string name="version_teal">Download v4.9.0</string>
 
     <string name="news1Date">10/11/2018</string>
-    <string name="news1Content">ABTheme Teal v4.9.0 released</string>
-
-    <string name="news2Date">10/01/2018</string>
-    <string name="news2Content">ABTheme Phlox v4.9.0 released</string>
-
-    <string name="news3Date">9/23/2018</string>
-    <string name="news3Content">ABTheme Autumn v4.9.0 released</string>
+    <string name="news1Content">Teal released</string>
 
 </resources>

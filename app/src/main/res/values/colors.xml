@@ -8,5 +8,20 @@
     <color name="background_material_dark">#000000</color>
     <color name="colorBackground">#000000</color>
 
+    <color name="pixelBlue">#5e97f6</color>
+
+    <color name="crimson">#dc143c</color>
+    <color name="quetzal">#e03e41</color>
+    <color name="red">#ff1928</color>
+    <color name="redleaf">#f84f43</color>
+
+    <color name="teal">#009788</color>
+
+    <color name="phlox">#df00ff</color>
+    <color name="invInferno">#bb052d</color>
+    <color name="aospextended">#21ef8b</color>
+    <color name="steam">#324056</color>
+    <color name="steam2">#8db4f2</color>
+
     <color name="bluedark">#21242b</color>
 </resources>

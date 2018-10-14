@@ -9,23 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class GreenSunsetFragment extends Fragment {
-    public static boolean greenSunIsInFront;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_greensunset, container, false);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        greenSunIsInFront = true;
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        greenSunIsInFront = false;
     }
 }

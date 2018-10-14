@@ -8,14 +8,19 @@
     <color name="background_material_dark">#000000</color>
     <color name="colorBackground">#000000</color>
 
-    <color name="pixelBlue">#5e97f6</color>
-
     <color name="crimson">#dc143c</color>
     <color name="quetzal">#e03e41</color>
     <color name="red">#ff1928</color>
     <color name="redleaf">#f84f43</color>
 
+    <color name="greenSunset">#22f8a0</color>
+    <color name="mint">#a5d6a7</color>
+    <color name="monster">#0bda51</color>
     <color name="teal">#009788</color>
+
+    <color name="cyanogen">#00ffff</color>
+    <color name="oxygen">#45a5f2</color>
+    <color name="pixelBlue">#5e97f6</color>
 
     <color name="phlox">#df00ff</color>
     <color name="invInferno">#bb052d</color>

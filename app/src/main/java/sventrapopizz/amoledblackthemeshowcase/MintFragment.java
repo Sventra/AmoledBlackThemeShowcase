@@ -9,23 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class MintFragment extends Fragment {
-    public static boolean mintIsInFront;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_mint, container, false);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        mintIsInFront = true;
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        mintIsInFront = false;
     }
 }

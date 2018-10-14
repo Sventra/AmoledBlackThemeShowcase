@@ -27,23 +27,14 @@ import java.util.concurrent.ExecutionException;
 
 import static sventrapopizz.amoledblackthemeshowcase.AospExFragment.aospIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.AuFragment.auIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.CyanogenFragment.cyanoIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.GreenSunsetFragment.greenSunIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.HomeFragment.isInFront;
 import static sventrapopizz.amoledblackthemeshowcase.InvertedFragment.invertedIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.InvertedInfernoFragment.invertedInfIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.LeagueFragment.leagueIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.MintFragment.mintIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.MonsterFragment.monsterIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.OrangeFragment.orangeIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.OxygenFragment.oxygenIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.PhloxFragment.phloxIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.PixelFragment.pixelIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.SaintsFragment.saintsIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.StandardFragment.standardIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.SteamFragment.steamIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.TealFragment.tealIsInFront;
-
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
     String stringaTemi = null;
@@ -358,47 +349,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.navigation_home:
                 openNavPureBlack(findViewById(R.id.fragment_container));
                 break;
-            case R.id.nav_standard:
-                openStandard(findViewById(R.id.fragment_container));
-                break;
             case R.id.nav_au:
                 openAu(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_autumn:
                 openAutumn(findViewById(R.id.fragment_container));
                 break;
-            case R.id.nav_cyanogen:
-                openCyanogen(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_greenSunset:
-                openGreenSunset(findViewById(R.id.fragment_container));
-                break;
             case R.id.nav_league:
                 openLeague(findViewById(R.id.fragment_container));
                 break;
-            case R.id.nav_mint:
-                openMint(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_monster:
-                openMonster(findViewById(R.id.fragment_container));
-                break;
             case R.id.nav_orange:
                 openOrange(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_oxygen:
-                openOxygen(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_pixelBlue:
-                openPixelBlue(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_saints:
                 openSaints(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_steam:
                 openSteam(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_teal:
-                openTeal(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_inverted:
                 openInverted(findViewById(R.id.fragment_container));
@@ -436,32 +403,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             if (isInFront) {
                 navigationView.setCheckedItem(R.id.nav_home);
                 getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-            } else if (standardIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_standard);
             } else if (auIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_au);
-            } else if (cyanoIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_cyanogen);
-            } else if (greenSunIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_league);
             } else if (leagueIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_league);
-            } else if (mintIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_mint);
-            } else if (monsterIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_monster);
             } else if (orangeIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_orange);
-            } else if (oxygenIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_oxygen);
             } else if (phloxIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_phlox);
-            } else if (pixelIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_pixelBlue);
             } else if (saintsIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_saints);
-            } else if (tealIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_teal);
             } else if (invertedIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_inverted);
             } else if (invertedInfIsInFront) {

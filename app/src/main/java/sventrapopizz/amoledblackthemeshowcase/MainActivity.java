@@ -26,14 +26,9 @@ import android.widget.TextView;
 import java.util.concurrent.ExecutionException;
 
 import static sventrapopizz.amoledblackthemeshowcase.AospExFragment.aospIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.AuFragment.auIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.HomeFragment.isInFront;
 import static sventrapopizz.amoledblackthemeshowcase.InvertedFragment.invertedIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.InvertedInfernoFragment.invertedInfIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.LeagueFragment.leagueIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.OrangeFragment.orangeIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.PhloxFragment.phloxIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.SaintsFragment.saintsIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.SteamFragment.steamIsInFront;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
@@ -113,7 +108,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     // Method to check if the app is updated or not
     public void showPopup() {
         outdated = new Dialog(this);
-        boolean connected=false;
         try {
             PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
             int verCode = pInfo.versionCode;
@@ -255,11 +249,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openAutumn(View view) {
-        openThemePage(new AutumnFragment(), R.id.nav_autumn);
+        openNavigation(new AutumnFragment());
     }
 
     public void openAu(View view) {
-        openThemePage(new AuFragment(), R.id.nav_au);
+        openNavigation(new AuFragment());
         /*InvertedInfernoFragment fragment = new InvertedInfernoFragment ();
         displaySelectedFragment(fragment, this, "invertedInferno");*/
     }
@@ -275,7 +269,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openLeague(View view) {
-        openThemePage(new LeagueFragment(), R.id.nav_league);
+        openNavigation(new LeagueFragment());
     }
 
     public void openMint(View view) {
@@ -287,7 +281,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openOrange(View view) {
-        openThemePage(new OrangeFragment(), R.id.nav_orange);
+        openNavigation(new OrangeFragment());
     }
 
     public void openOxygen(View view) {
@@ -295,7 +289,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openPhlox(View view) {
-        openThemePage(new PhloxFragment(), R.id.nav_phlox);
+        openNavigation(new PhloxFragment());
     }
 
     public void openPixelBlue(View view) {
@@ -315,7 +309,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openSaints(View view) {
-        openThemePage(new SaintsFragment(), R.id.nav_saints);
+        openNavigation(new SaintsFragment());
     }
 
     public void openSteam(View view) {
@@ -348,21 +342,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.navigation_home:
                 openNavPureBlack(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_au:
-                openAu(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_autumn:
-                openAutumn(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_league:
-                openLeague(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_orange:
-                openOrange(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_saints:
-                openSaints(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_steam:
                 openSteam(findViewById(R.id.fragment_container));
@@ -403,16 +382,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             if (isInFront) {
                 navigationView.setCheckedItem(R.id.nav_home);
                 getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-            } else if (auIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_au);
-            } else if (leagueIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_league);
-            } else if (orangeIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_orange);
-            } else if (phloxIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_phlox);
-            } else if (saintsIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_saints);
             } else if (invertedIsInFront) {
                 navigationView.setCheckedItem(R.id.nav_inverted);
             } else if (invertedInfIsInFront) {

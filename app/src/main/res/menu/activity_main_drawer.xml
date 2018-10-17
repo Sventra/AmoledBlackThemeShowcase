@@ -19,29 +19,6 @@
             android:title="Pure black themes" />
     </group>
 
-    <group
-        android:id="@+id/blackThemes"
-        android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_au"
-            android:title="Au" />
-        <item
-            android:id="@+id/nav_autumn"
-            android:title="Autumn" />
-        <item
-            android:id="@+id/nav_league"
-            android:title="LoL Chat" />
-        <item
-            android:id="@+id/nav_orange"
-            android:title="Orange" />
-        <item
-            android:id="@+id/nav_phlox"
-            android:title="Phlox" />
-        <item
-            android:id="@+id/nav_saints"
-            android:title="Saints" />
-    </group>
-
     <group android:enabled="false">
         <item android:title="Inverted themes">
         </item>

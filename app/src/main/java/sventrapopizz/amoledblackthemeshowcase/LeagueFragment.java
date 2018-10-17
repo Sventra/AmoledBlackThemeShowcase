@@ -9,23 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class LeagueFragment extends Fragment {
-    public static boolean leagueIsInFront;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_league, container, false);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        leagueIsInFront = true;
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        leagueIsInFront = false;
     }
 }

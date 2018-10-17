@@ -10,26 +10,24 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.view.Menu;
-import android.view.View;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import java.util.concurrent.ExecutionException;
 
-import static sventrapopizz.amoledblackthemeshowcase.AospExFragment.aospIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.HomeFragment.isInFront;
-import static sventrapopizz.amoledblackthemeshowcase.InvertedFragment.invertedIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.InvertedInfernoFragment.invertedInfIsInFront;
-import static sventrapopizz.amoledblackthemeshowcase.SteamFragment.steamIsInFront;
+import static sventrapopizz.amoledblackthemeshowcase.NavigationPureBlackFragment.pureBlackIsInFront;
+import static sventrapopizz.amoledblackthemeshowcase.NavigationInvertedFragment.invertedIsInFront;
+import static sventrapopizz.amoledblackthemeshowcase.NavigationOtherThemesFragment.otherIsInFront;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
     String stringaTemi = null;
@@ -237,7 +235,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openNavPureBlack(View view) {
-        openNavigation(new NavigationPureBlackFragment());
+        openThemePage(new NavigationPureBlackFragment(), R.id.navigation_home);
+    }
+
+    public void openNavInverted(View view) {
+        openThemePage(new NavigationInvertedFragment(), R.id.navigation_invertedThemes);
+    }
+
+    public void openNavOther(View view) {
+        openThemePage(new NavigationOtherThemesFragment(), R.id.navigation_otherThemes);
     }
 
     public void openSettings() {
@@ -248,14 +254,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openNavigation(new StandardFragment());
     }
 
-    public void openAutumn(View view) {
-        openNavigation(new AutumnFragment());
-    }
-
     public void openAu(View view) {
         openNavigation(new AuFragment());
         /*InvertedInfernoFragment fragment = new InvertedInfernoFragment ();
         displaySelectedFragment(fragment, this, "invertedInferno");*/
+    }
+
+    public void openAutumn(View view) {
+        openNavigation(new AutumnFragment());
     }
 
     public void openCyanogen(View view) {openNavigation(new CyanogenFragment());}
@@ -313,7 +319,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openSteam(View view) {
-        openThemePage(new SteamFragment(), R.id.nav_steam);
+        openNavigation(new SteamFragment());
     }
 
     public void openTeal(View view) {
@@ -321,15 +327,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openAospEx(View view) {
-        openThemePage(new AospExFragment(), R.id.nav_aospex);
+        openNavigation(new AospExFragment());
     }
 
     public void openInverted(View view) {
-        openThemePage(new InvertedFragment(), R.id.nav_inverted);
+        openNavigation(new InvertedFragment());
     }
 
     public void openInvertedInferno(View view) {
-        openThemePage(new InvertedInfernoFragment(), R.id.nav_inverted_inferno);
+        openNavigation(new InvertedInfernoFragment());
     }
 
 
@@ -343,17 +349,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.navigation_home:
                 openNavPureBlack(findViewById(R.id.fragment_container));
                 break;
-            case R.id.nav_steam:
-                openSteam(findViewById(R.id.fragment_container));
+            case R.id.navigation_invertedThemes:
+                openNavInverted(findViewById(R.id.fragment_container));
                 break;
-            case R.id.nav_inverted:
-                openInverted(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_inverted_inferno:
-                openInvertedInferno(findViewById(R.id.fragment_container));
-                break;
-            case R.id.nav_aospex:
-                openAospEx(findViewById(R.id.fragment_container));
+            case R.id.navigation_otherThemes:
+                openNavOther(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_openchannel:
                 uri = Uri.parse("https://t.me/ABTheme");
@@ -382,14 +382,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             if (isInFront) {
                 navigationView.setCheckedItem(R.id.nav_home);
                 getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            } else if (pureBlackIsInFront) {
+                navigationView.setCheckedItem(R.id.navigation_home);
             } else if (invertedIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_inverted);
-            } else if (invertedInfIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_inverted_inferno);
-            } else if (aospIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_aospex);
-            } else if (steamIsInFront) {
-                navigationView.setCheckedItem(R.id.nav_steam);
+                navigationView.setCheckedItem(R.id.navigation_otherThemes);
+            } else if (otherIsInFront) {
+                navigationView.setCheckedItem(R.id.navigation_otherThemes);
             }
         }
     }

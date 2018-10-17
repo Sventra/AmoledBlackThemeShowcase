@@ -8,22 +8,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class NavigationPureBlackFragment extends Fragment {
-    public static boolean pureBlackIsInFront;
+public class NavigationOtherThemesFragment extends Fragment {
+    public static boolean otherIsInFront;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_navigation_pureblack, container, false);
+        return inflater.inflate(R.layout.fragment_navigation_other, container, false);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        pureBlackIsInFront = true;
+        otherIsInFront = true;
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        pureBlackIsInFront = false;
+        otherIsInFront = false;
     }
 }

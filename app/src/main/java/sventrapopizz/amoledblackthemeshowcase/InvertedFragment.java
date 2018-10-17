@@ -9,22 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class InvertedFragment extends Fragment {
-    public static boolean invertedIsInFront;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_inverted, container, false);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        invertedIsInFront = true;
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        invertedIsInFront = false;
     }
 }

@@ -9,23 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class AospExFragment extends Fragment {
-    public static boolean aospIsInFront;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_aospex, container, false);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        aospIsInFront = true;
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        aospIsInFront = false;
     }
 }

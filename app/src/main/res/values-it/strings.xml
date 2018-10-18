@@ -52,4 +52,25 @@
     <string name="try_again">Prova ancora</string>
     <string name="action_settings">Impostazioni</string>
     <string name="version_teal">Scarica la v4.9.0</string>
+    <string name="pure_black_themes">Temi totalmente neri</string>
+    <string name="pure_black_string_home">Sfondi totalmente neri \nAlcuni temi hanno uno sfondo modificato</string>
+    <string name="inverted_themes">Temi invertiti</string>
+    <string name="inverted_string_home">Sfondi bianchi</string>
+    <string name="other_themes">Altri temi</string>
+    <string name="other_string_home">Tutt\'altro</string>
+    <string name="other_string_navigation">Tutti gli altri temi\nQuesti temi non rientrano in nessun\'altra categoria</string>
+    <string name="quick_links">Collegamenti veloci</string>
+    <string name="open_channel">Apri canale</string>
+    <string name="contact_me">Contattami</string>
+    <string name="view_all">Guarda tutti</string>
+    <string name="favorite_themes">Più scaricati</string>
+    <string name="red_themes">Temi rossi</string>
+    <string name="green_themes">Temi verdi</string>
+    <string name="blue_themes">Temi blu</string>
+    <string name="orange_themes">Temi arancioni</string>
+    <string name="purple_themes">Temi viola</string>
+    <string name="themes">Temi</string>
+    <string name="take_me_home">TORNA ALLA HOME</string>
+
+
 </resources>

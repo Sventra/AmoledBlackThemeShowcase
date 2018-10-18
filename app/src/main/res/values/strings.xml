@@ -64,5 +64,25 @@
 
     <string name="news1Date">10/11/2018</string>
     <string name="news1Content">Teal released</string>
+    <string name="pure_black_themes">Pure black themes</string>
+    <string name="pure_black_string_home">Pure black backgrounds \nSome of them have a custom wallpapers</string>
+    <string name="inverted_themes">Inverted themes</string>
+    <string name="inverted_string_home">White backgrounds</string>
+    <string name="other_themes">Other themes</string>
+    <string name="other_string_home">Anything else</string>
+    <string name="other_string_navigation">All the other themes\nThese themes fit no previous category</string>
+    <string name="quick_links">Quick links</string>
+    <string name="open_channel">Open channel</string>
+    <string name="contact_me">Contact me</string>
+    <string name="view_all">View all</string>
+    <string name="favorite_themes">Most downloaded</string>
+    <string name="red_themes">Red themes</string>
+    <string name="green_themes">Green themes</string>
+    <string name="blue_themes">Blue themes</string>
+    <string name="orange_themes">Orange themes</string>
+    <string name="purple_themes">Purple themes</string>
+    <string name="themes">Themes</string>
+    <string name="take_me_home">TAKE ME HOME</string>
+
 
 </resources>

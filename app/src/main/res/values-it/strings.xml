@@ -71,6 +71,8 @@
     <string name="purple_themes">Temi viola</string>
     <string name="themes">Temi</string>
     <string name="take_me_home">TORNA ALLA HOME</string>
+    <string name="bring_me_back">INDIETRO</string>
+
 
 
 </resources>

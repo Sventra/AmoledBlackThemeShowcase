@@ -41,7 +41,7 @@
                         android:layout_height="95dp"
                         android:layout_marginStart="32dp"
                         android:layout_marginLeft="32dp"
-                        android:onClick="openPhlox"
+                        android:onClick="openDisrespect"
                         android:visibility="visible"
                         app:cardBackgroundColor="@android:color/transparent"
                         app:cardCornerRadius="12dp"

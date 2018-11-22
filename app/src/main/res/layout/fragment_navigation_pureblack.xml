@@ -36,6 +36,59 @@
                     tools:layout_editor_absoluteY="63dp">
 
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cardViewButton23"
+                        android:layout_width="70dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:onClick="openPhlox"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/cardViewButton21"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView62"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginEnd="2dp"
+                                android:layout_marginRight="2dp"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintBottom_toTopOf="@+id/textView63"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_square_disrespect" />
+
+                            <TextView
+                                android:id="@+id/textView63"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:fontFamily="@font/timeburnernormal"
+                                android:gravity="center"
+                                android:text="Disrespect"
+                                android:textColor="@color/disrespect"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView62"
+                                app:layout_constraintStart_toStartOf="@+id/imageView62"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView62" />
+                        </android.support.constraint.ConstraintLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
                         android:id="@+id/cardViewButton22"
                         android:layout_width="70dp"
                         android:layout_height="95dp"
@@ -92,8 +145,6 @@
                         android:id="@+id/cardViewButton21"
                         android:layout_width="70dp"
                         android:layout_height="95dp"
-                        android:layout_marginStart="32dp"
-                        android:layout_marginLeft="32dp"
                         android:onClick="openPhlox"
                         android:visibility="visible"
                         app:cardBackgroundColor="@android:color/transparent"
@@ -101,7 +152,7 @@
                         app:cardElevation="0dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/cardViewButton22"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/cardViewButton23"
                         app:layout_constraintTop_toTopOf="parent">
 
                         <android.support.constraint.ConstraintLayout

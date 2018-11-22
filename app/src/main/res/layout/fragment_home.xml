@@ -51,7 +51,8 @@
                     android:layout_height="match_parent"
                     android:adjustViewBounds="false"
                     android:cropToPadding="false"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/walldisrep" />
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
@@ -63,7 +64,7 @@
                         android:layout_height="60dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_square_teal" />
+                        app:srcCompat="@drawable/ic_square_disrespect" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -91,7 +92,7 @@
                         android:fontFamily="@font/timeburnernormal"
                         android:onClick="openTeal"
                         android:text="@string/view"
-                        android:textColor="@color/teal"
+                        android:textColor="@color/disrespectBlue"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"

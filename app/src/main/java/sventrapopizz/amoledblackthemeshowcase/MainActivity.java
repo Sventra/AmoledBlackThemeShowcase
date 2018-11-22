@@ -270,6 +270,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openNavigation(new CrimsonFragment());
     }
 
+    public void openDisrespect(View view) {
+        openNavigation(new DisrespectFragment());
+    }
+
     public void openGreenSunset(View view) {
         openNavigation(new GreenSunsetFragment());
     }

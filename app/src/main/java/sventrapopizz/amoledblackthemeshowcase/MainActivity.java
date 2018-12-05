@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Check for app version
         showPopup();
-
+        /*
         Menu menuNav=navigationView.getMenu();
 
         MenuItem item = menuNav.findItem(R.id.navigation_tgxThemes);
@@ -115,6 +114,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } catch (Exception e) {
             e.printStackTrace();
         }
+        */
         Thread megaMethod = new Thread() {
             public void run() {
 
@@ -303,6 +303,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openNavigation(new GreenSunsetFragment());
     }
 
+    public void openInfernoX(View view) {
+        openNavigation(new InfernoXFragment());
+    }
+
     public void openLeague(View view) {
         openNavigation(new LeagueFragment());
     }
@@ -329,6 +333,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void openPixelBlue(View view) {
         openNavigation(new PixelFragment());
+    }
+
+    public void openPixelBlueX(View view) {
+        openNavigation(new PixelXFragment());
     }
 
     public void openQuetzal(View view) {

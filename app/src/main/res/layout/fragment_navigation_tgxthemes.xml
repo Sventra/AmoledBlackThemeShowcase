@@ -46,7 +46,7 @@
                         android:layout_height="95dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
-                        android:onClick="openQuetzal"
+                        android:onClick="openPixelBlueX"
                         android:visibility="visible"
                         app:cardBackgroundColor="@android:color/transparent"
                         app:cardCornerRadius="12dp"
@@ -74,7 +74,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_square_inferno" />
+                                app:srcCompat="@drawable/ic_square_pixel" />
 
                             <TextView
                                 android:id="@+id/textView9"
@@ -85,8 +85,8 @@
                                 android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/timeburnernormal"
                                 android:gravity="center"
-                                android:text="Inferno"
-                                android:textColor="@color/inferno"
+                                android:text="Pixel Blue"
+                                android:textColor="@color/pixelBlue"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="@+id/imageView13"
                                 app:layout_constraintStart_toStartOf="@+id/imageView13"
@@ -101,7 +101,7 @@
                         android:layout_height="95dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginLeft="16dp"
-                        android:onClick="openCrimson"
+                        android:onClick="openInfernoX"
                         android:visibility="visible"
                         app:cardBackgroundColor="@android:color/transparent"
                         app:cardCornerRadius="12dp"
@@ -129,7 +129,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_square_standard" />
+                                app:srcCompat="@drawable/ic_square_inferno" />
 
                             <TextView
                                 android:id="@+id/textView8"
@@ -140,8 +140,8 @@
                                 android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/timeburnernormal"
                                 android:gravity="center"
-                                android:text="Standard"
-                                android:textColor="#fff"
+                                android:text="Inferno"
+                                android:textColor="@color/invInferno"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="@+id/imageView12"
                                 app:layout_constraintStart_toStartOf="@+id/imageView12"
@@ -263,7 +263,7 @@
                         android:layout_marginRight="8dp"
                         android:layout_marginBottom="8dp"
                         android:fontFamily="@font/timeburnernormal"
-                        android:text="Telegram X Themes"
+                        android:text="@string/tgx_themes"
                         android:textColor="#fff"
                         android:textSize="24sp"
                         app:layout_constraintBottom_toTopOf="@+id/textView18"

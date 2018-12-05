@@ -25,7 +25,7 @@
     <string name="version_inverted_inferno">Scarica la v4.9.0</string>
     <string name="version_aospex">Scarica la v4.9.0</string>
     <string name="version_steam">Scarica la v4.9.0</string>
-    <string name="news1Content">Disrespect rilasciato</string>
+    <string name="news1Content">Temi di Telegram X rilasciati</string>
     <string name="news1Date">11/10/2018</string>
     <string name="similar_themes">Temi simili</string>
     <string name="lastUpdate_monster">Ultimo aggiornamento: 17/8/2018 per Telegram v4.9</string>
@@ -76,6 +76,10 @@
     <string name="bring_me_back">INDIETRO</string>
     <string name="tgx_themes">Temi per Telegram X</string>
     <string name="tgx_string_home">Temi fatti per Telegram X</string>
+    <string name="version_infernox">Scarica</string>
+    <string name="version_pixelBluex">Scarica</string>
+    <string name="lastUpdate_pixelBluex">Fatto per TGX BETA 0.21.2.1018</string>
+    <string name="lastUpdate_infernox">Fatto per TGX BETA 0.21.2.1018</string>
 
 
 </resources>

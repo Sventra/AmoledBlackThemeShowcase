@@ -18,11 +18,15 @@
             android:id="@+id/navigation_home"
             android:title="@string/pure_black_themes" />
         <item
+            android:id="@+id/navigation_tgxThemes"
+            android:title="@string/tgx_themes" />
+        <item
             android:id="@+id/navigation_invertedThemes"
             android:title="@string/inverted_themes"/>
         <item
             android:id="@+id/navigation_otherThemes"
             android:title="@string/other_themes"/>
+
     </group>
 
     <group android:checkableBehavior="single">

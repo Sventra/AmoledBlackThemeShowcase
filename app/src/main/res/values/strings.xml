@@ -69,6 +69,8 @@
     <string name="news1Content">Disrespect released</string>
     <string name="pure_black_themes">Pure black themes</string>
     <string name="pure_black_string_home">Pure black backgrounds \nSome of them have a custom wallpapers</string>
+    <string name="tgx_themes">Telegram X themes</string>
+    <string name="tgx_string_home">Themes made for Telegram X</string>
     <string name="inverted_themes">Inverted themes</string>
     <string name="inverted_string_home">White backgrounds</string>
     <string name="other_themes">Other themes</string>

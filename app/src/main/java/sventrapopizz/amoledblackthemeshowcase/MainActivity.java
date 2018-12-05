@@ -10,6 +10,7 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.internal.NavigationMenu;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -18,6 +19,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +29,7 @@ import static sventrapopizz.amoledblackthemeshowcase.HomeFragment.isInFront;
 import static sventrapopizz.amoledblackthemeshowcase.NavigationPureBlackFragment.pureBlackIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.NavigationInvertedFragment.invertedIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.NavigationOtherThemesFragment.otherIsInFront;
+import static sventrapopizz.amoledblackthemeshowcase.NavigationTGXThemesFragment.TGXIsInFront;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
@@ -70,6 +73,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return isConnected;
     }
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,6 +99,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Check for app version
         showPopup();
+
+        Menu menuNav=navigationView.getMenu();
+
+        MenuItem item = menuNav.findItem(R.id.navigation_tgxThemes);
+        try {
+            boolean tgxEnabled = (boolean) new RetriveFeedTask3().execute().get();
+
+            if (tgxEnabled) {
+                item.setEnabled(true);
+            } else{
+                item.setEnabled(false);
+                item.setVisible(false);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         Thread megaMethod = new Thread() {
             public void run() {
 
@@ -238,6 +259,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openThemePage(new NavigationPureBlackFragment(), R.id.navigation_home);
     }
 
+    public void openNavTGX(View view) {
+        openThemePage(new NavigationTGXThemesFragment(), R.id.navigation_tgxThemes);
+    }
+
     public void openNavInverted(View view) {
         openThemePage(new NavigationInvertedFragment(), R.id.navigation_invertedThemes);
     }
@@ -342,7 +367,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openNavigation(new InvertedInfernoFragment());
     }
 
-
     @Override
     public boolean onNavigationItemSelected(@NonNull final MenuItem item) {
         Uri uri;
@@ -352,6 +376,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.navigation_home:
                 openNavPureBlack(findViewById(R.id.fragment_container));
+                break;
+            case R.id.navigation_tgxThemes:
+                openNavTGX(findViewById(R.id.fragment_container));
                 break;
             case R.id.navigation_invertedThemes:
                 openNavInverted(findViewById(R.id.fragment_container));
@@ -388,6 +415,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
             } else if (pureBlackIsInFront) {
                 navigationView.setCheckedItem(R.id.navigation_home);
+            }else if (TGXIsInFront){
+                navigationView.setCheckedItem(R.id.navigation_tgxThemes);
             } else if (invertedIsInFront) {
                 navigationView.setCheckedItem(R.id.navigation_otherThemes);
             } else if (otherIsInFront) {

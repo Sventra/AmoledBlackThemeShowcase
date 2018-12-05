@@ -74,7 +74,8 @@
     <string name="themes">Temi</string>
     <string name="take_me_home">TORNA ALLA HOME</string>
     <string name="bring_me_back">INDIETRO</string>
-
+    <string name="tgx_themes">Temi per Telegram X</string>
+    <string name="tgx_string_home">Temi fatti per Telegram X</string>
 
 
 </resources>

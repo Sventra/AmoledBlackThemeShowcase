@@ -8,23 +8,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class HomeFragment extends Fragment {
-    public static boolean isInFront;
-
+public class NavigationTGXThemesFragment extends Fragment {
+    public static boolean TGXIsInFront;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_navigation_tgxthemes, container, false);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        isInFront = true;
+        TGXIsInFront = true;
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        isInFront = false;
+        TGXIsInFront = false;
     }
 }

@@ -1,7 +1,6 @@
 package sventrapopizz.amoledblackthemeshowcase;
 
 import android.app.Dialog;
-import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
@@ -10,25 +9,24 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.internal.NavigationMenu;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import static sventrapopizz.amoledblackthemeshowcase.HomeFragment.isInFront;
-import static sventrapopizz.amoledblackthemeshowcase.NavigationPureBlackFragment.pureBlackIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.NavigationInvertedFragment.invertedIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.NavigationOtherThemesFragment.otherIsInFront;
+import static sventrapopizz.amoledblackthemeshowcase.NavigationPureBlackFragment.pureBlackIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.NavigationTGXThemesFragment.TGXIsInFront;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -129,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         outdated = new Dialog(this);
         try {
             PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
-            int verCode = pInfo.versionCode;
+            long verCode = pInfo.getLongVersionCode();
             if (internet_connection()) {
                 String newVersString = (String) new RetriveFeedTask2().execute().get(); // This will acquire from a specific message in a telegram channel, the most up to date version of the app
                 int newVers = Integer.parseInt(newVersString);
@@ -137,8 +135,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     TextView txtclose;
                     Button btnOpen;
                     outdated.setContentView(R.layout.outdatedpopup);
-                    txtclose = (TextView) outdated.findViewById(R.id.txtclose);
-                    btnOpen = (Button) outdated.findViewById(R.id.buttonUpdate);
+                    txtclose = outdated.findViewById(R.id.txtclose);
+                    btnOpen = outdated.findViewById(R.id.buttonUpdate);
                     btnOpen.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
@@ -239,7 +237,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (getSupportFragmentManager().getBackStackEntryCount() > 5){
             getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         }
-        getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.fragment_container, fragment).commit();
+        getSupportFragmentManager().beginTransaction().addToBackStack(null).setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.fragment_container, fragment).commit();
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setCheckedItem(nav);
     }
@@ -248,7 +246,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (getSupportFragmentManager().getBackStackEntryCount() > 5){
             getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         }
-        getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.fragment_container, fragment).commit();
+        getSupportFragmentManager().beginTransaction().addToBackStack(null).setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.fragment_container, fragment).commit();
     }
 
     public void openHome(View view) {

@@ -285,7 +285,7 @@
                         android:gravity="center"
                         android:maxEms="20"
                         android:singleLine="false"
-                        android:text="@string/other_string_navigation"
+                        android:text="@string/tgx_string_page"
                         android:textColor="#C3C3C3"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"

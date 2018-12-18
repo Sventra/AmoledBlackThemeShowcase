@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         outdated = new Dialog(this);
         try {
             PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
-            long verCode = pInfo.getLongVersionCode();
+            int verCode = pInfo.versionCode;
             if (internet_connection()) {
                 String newVersString = (String) new RetriveFeedTask2().execute().get(); // This will acquire from a specific message in a telegram channel, the most up to date version of the app
                 int newVers = Integer.parseInt(newVersString);
@@ -359,6 +359,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void openTeal(View view) {
         openNavigation(new TealFragment());
+    }
+
+    public void openTealX(View view) {
+        openNavigation(new TealXFragment());
     }
 
     public void openAospEx(View view) {

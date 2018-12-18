@@ -41,7 +41,7 @@
     <string name="lastUpdate_disrespect">Last update: 11/22/2018 for Telegram v4.9</string>
     <string name="lastUpdate_pixelBluex">Made for TGX BETA 0.21.2.1018</string>
     <string name="lastUpdate_infernox">Made for TGX BETA 0.21.2.1018</string>
-
+    <string name="lastUpdate_tealx">Made for TGX BETA 0.21.3.1037</string>
 
     <string name="version_standard">Download v4.9.0</string>
     <string name="version_au">Download v4.9.0</string>
@@ -68,9 +68,10 @@
     <string name="version_disrespect">Download v4.9.0</string>
     <string name="version_pixelBluex">Download</string>
     <string name="version_infernox">Download</string>
+    <string name="version_tealx">Download</string>
 
     <string name="news1Date">10/11/2018</string>
-    <string name="news1Content">Telegram X Themes released</string>
+    <string name="news1Content">Teal released for \nTelegram X</string>
     <string name="pure_black_themes">Pure black themes</string>
     <string name="pure_black_string_home">Pure black backgrounds \nSome of them have a custom wallpapers</string>
     <string name="tgx_themes">Telegram X Themes</string>

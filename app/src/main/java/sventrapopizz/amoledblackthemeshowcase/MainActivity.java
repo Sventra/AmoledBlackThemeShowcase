@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Uri uri = Uri.parse("https://t.me/ABTheme");
         newIntent(uri);
     }
+
     // This method will open the chat with myself
     public void contactMe(View view) {
         Uri uri = Uri.parse("https://t.me/SventraPopizz");
@@ -70,7 +71,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         return isConnected;
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -234,7 +234,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     public void openThemePage(Fragment fragment, int nav) {
-        if (getSupportFragmentManager().getBackStackEntryCount() > 5){
+        if (getSupportFragmentManager().getBackStackEntryCount() > 5) {
             getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         }
         getSupportFragmentManager().beginTransaction().addToBackStack(null).setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.fragment_container, fragment).commit();
@@ -243,137 +243,179 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void openNavigation(Fragment fragment) {
-        if (getSupportFragmentManager().getBackStackEntryCount() > 5){
+        if (getSupportFragmentManager().getBackStackEntryCount() > 5) {
             getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         }
         getSupportFragmentManager().beginTransaction().addToBackStack(null).setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.fragment_container, fragment).commit();
     }
 
     public void openHome(View view) {
-        openThemePage(new HomeFragment(), R.id.nav_home);
+        if (getSupportFragmentManager().getBackStackEntryCount() > 5) {
+            getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        }
+        getSupportFragmentManager().beginTransaction().addToBackStack(null).setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.fragment_container, new HomeFragment()).commit();
+        NavigationView navigationView = findViewById(R.id.nav_view);
+
     }
 
+    /*public void openHome(View view) {
+        openThemePage(new HomeFragment(), R.id.nav_home);
+    }*/
+
     public void openNavPureBlack(View view) {
+        getSupportActionBar().setTitle("Pure Black Themes");
         openThemePage(new NavigationPureBlackFragment(), R.id.navigation_home);
     }
 
     public void openNavTGX(View view) {
+        getSupportActionBar().setTitle("Telegram X Themes");
         openThemePage(new NavigationTGXThemesFragment(), R.id.navigation_tgxThemes);
     }
 
     public void openNavInverted(View view) {
+        getSupportActionBar().setTitle("Inverted Themes");
         openThemePage(new NavigationInvertedFragment(), R.id.navigation_invertedThemes);
     }
 
     public void openNavOther(View view) {
+        getSupportActionBar().setTitle("Other Themes");
         openThemePage(new NavigationOtherThemesFragment(), R.id.navigation_otherThemes);
     }
 
     public void openSettings() {
+        getSupportActionBar().setTitle("Settings");
         openThemePage(new SettingsFragment(), R.id.nav_home);
     }
 
     public void openStandard(View view) {
+        getSupportActionBar().setTitle("Standard");
         openNavigation(new StandardFragment());
     }
 
     public void openAu(View view) {
+        getSupportActionBar().setTitle("Au");
         openNavigation(new AuFragment());
         /*InvertedInfernoFragment fragment = new InvertedInfernoFragment ();
         displaySelectedFragment(fragment, this, "invertedInferno");*/
     }
 
     public void openAutumn(View view) {
+        getSupportActionBar().setTitle("Autumn");
         openNavigation(new AutumnFragment());
     }
 
-    public void openCyanogen(View view) {openNavigation(new CyanogenFragment());}
+    public void openCyanogen(View view) {
+        getSupportActionBar().setTitle("Cyanogen");
+        openNavigation(new CyanogenFragment());
+    }
 
     public void openCrimson(View view) {
+        getSupportActionBar().setTitle("Crimson");
         openNavigation(new CrimsonFragment());
     }
 
     public void openDisrespect(View view) {
+        getSupportActionBar().setTitle("Disrespect");
         openNavigation(new DisrespectFragment());
     }
 
     public void openGreenSunset(View view) {
+        getSupportActionBar().setTitle("Green Sunset");
         openNavigation(new GreenSunsetFragment());
     }
 
     public void openInfernoX(View view) {
+        getSupportActionBar().setTitle("Inferno X");
         openNavigation(new InfernoXFragment());
     }
 
     public void openLeague(View view) {
+        getSupportActionBar().setTitle("LoL Chat");
         openNavigation(new LeagueFragment());
     }
 
     public void openMint(View view) {
+        getSupportActionBar().setTitle("Mint");
         openNavigation(new MintFragment());
     }
 
     public void openMonster(View view) {
+        getSupportActionBar().setTitle("Monster");
         openNavigation(new MonsterFragment());
     }
 
     public void openOrange(View view) {
+        getSupportActionBar().setTitle("Orange");
         openNavigation(new OrangeFragment());
     }
 
     public void openOxygen(View view) {
+        getSupportActionBar().setTitle("Oxygen");
         openNavigation(new OxygenFragment());
     }
 
     public void openPhlox(View view) {
+        getSupportActionBar().setTitle("Phlox");
         openNavigation(new PhloxFragment());
     }
 
     public void openPixelBlue(View view) {
+        getSupportActionBar().setTitle("Pixel Blue");
         openNavigation(new PixelFragment());
     }
 
     public void openPixelBlueX(View view) {
+        getSupportActionBar().setTitle("Pixel Blue X");
         openNavigation(new PixelXFragment());
     }
 
     public void openQuetzal(View view) {
+        getSupportActionBar().setTitle("Quetzal");
         openNavigation(new QuetzalFragment());
     }
 
     public void openRed(View view) {
+        getSupportActionBar().setTitle("Red");
         openNavigation(new RedFragment());
     }
 
     public void openRedleaf(View view) {
+        getSupportActionBar().setTitle("Redleaf");
         openNavigation(new RedleafFragment());
     }
 
     public void openSaints(View view) {
+        getSupportActionBar().setTitle("Saints");
         openNavigation(new SaintsFragment());
     }
 
     public void openSteam(View view) {
+        getSupportActionBar().setTitle("Steam");
         openNavigation(new SteamFragment());
     }
 
     public void openTeal(View view) {
+        getSupportActionBar().setTitle("Teal");
         openNavigation(new TealFragment());
     }
 
     public void openTealX(View view) {
+        getSupportActionBar().setTitle("Teal X");
         openNavigation(new TealXFragment());
     }
 
     public void openAospEx(View view) {
+        getSupportActionBar().setTitle("AOSP Extended");
         openNavigation(new AospExFragment());
     }
 
     public void openInverted(View view) {
+        getSupportActionBar().setTitle("Inverted");
         openNavigation(new InvertedFragment());
     }
 
     public void openInvertedInferno(View view) {
+        getSupportActionBar().setTitle("Inverted Inferno");
         openNavigation(new InvertedInfernoFragment());
     }
 
@@ -416,20 +458,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
-            if (getSupportFragmentManager().getBackStackEntryCount() > 5){
+            if (getSupportFragmentManager().getBackStackEntryCount() > 5) {
                 getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
             }
             NavigationView navigationView = findViewById(R.id.nav_view);
             if (isInFront) {
+                getSupportActionBar().setTitle("ABTheme Showcase");
                 navigationView.setCheckedItem(R.id.nav_home);
                 getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
             } else if (pureBlackIsInFront) {
+                getSupportActionBar().setTitle("Pure Black Themes");
                 navigationView.setCheckedItem(R.id.navigation_home);
-            }else if (TGXIsInFront){
+            } else if (TGXIsInFront) {
+                getSupportActionBar().setTitle("Telegram X Themes");
                 navigationView.setCheckedItem(R.id.navigation_tgxThemes);
             } else if (invertedIsInFront) {
+                getSupportActionBar().setTitle("Inverted Themes");
                 navigationView.setCheckedItem(R.id.navigation_otherThemes);
             } else if (otherIsInFront) {
+                getSupportActionBar().setTitle("Other Themes");
                 navigationView.setCheckedItem(R.id.navigation_otherThemes);
             }
         }

@@ -236,7 +236,7 @@
                         android:layout_height="95dp"
                         android:layout_marginEnd="32dp"
                         android:layout_marginRight="32dp"
-                        android:onClick="openSteam"
+                        android:onClick="openInvertedInferno"
                         android:visibility="visible"
                         app:cardBackgroundColor="@android:color/transparent"
                         app:cardCornerRadius="12dp"

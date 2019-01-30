@@ -95,6 +95,7 @@
     <string name="themes">Themes</string>
     <string name="take_me_home">TAKE ME HOME</string>
     <string name="bring_me_back">BACK</string>
+    <string name="minussymbol"><![CDATA[<]]></string>
 
 
 </resources>

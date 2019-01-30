@@ -83,6 +83,7 @@
     <string name="tgx_string_page">Potrebbe essere necessaria la versione Beta di Telegram X</string>
     <string name="version_tealx">Scarica</string>
     <string name="lastUpdate_tealx">Fatto per TGX BETA 0.21.3.1037</string>
+    <string name="minussymbol"><![CDATA[<]]></string>
 
 
 </resources>

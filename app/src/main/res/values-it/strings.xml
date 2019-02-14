@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ABTheme Showcase</string>
-    <string name="lastUpdate_standard">Ultimo aggiornamento: 28/7/2018 per Telegram v4.9</string>
+    <string name="lastUpdate_standard">Ultimo aggiornamento: 2/2/2018 per Telegram v5.3</string>
     <string name="lastUpdate_au">Ultimo aggiornamento: 28/7/2018 per Telegram v4.9</string>
     <string name="lastUpdate_cyanogen">Ultimo aggiornamento: 7/8/2018 per Telegram v4.9</string>
     <string name="lastUpdate_mint">Ultimo aggiornamento: 3/8/2018 per Telegram v4.9</string>
@@ -13,7 +13,7 @@
     <string name="lastUpdate_inverted_inferno">Ultimo aggiornamento: 8/8/2018 per Telegram v4.9</string>
     <string name="lastUpdate_aospex">Ultimo aggiornamento: 30/7/2018 per Telegram v4.9</string>
     <string name="lastUpdate_steam">Ultimo aggiornamento: 8/8/2018 per Telegram v4.9</string>
-    <string name="version_standard">Scarica la v4.9.0</string>
+    <string name="version_standard">Scarica la v5.3.0</string>
     <string name="version_au">Scarica la v4.9.0</string>
     <string name="version_cyanogen">Scarica la v4.9.1</string>
     <string name="version_mint">Scarica la v4.9.0</string>
@@ -84,6 +84,8 @@
     <string name="version_tealx">Scarica</string>
     <string name="lastUpdate_tealx">Fatto per TGX BETA 0.21.3.1037</string>
     <string name="minussymbol"><![CDATA[<]]></string>
+    <string name="version_invertedx">Scarica</string>
+    <string name="lastUpdate_invertedx">Fatto per TGX BETA 0.21.3.1037</string>
 
 
 </resources>

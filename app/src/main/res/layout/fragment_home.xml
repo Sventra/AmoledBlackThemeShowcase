@@ -63,7 +63,7 @@
                         android:layout_height="60dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_square_teal" />
+                        app:srcCompat="@drawable/ic_square_inverted" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -89,9 +89,9 @@
                         android:layout_marginRight="16dp"
                         android:layout_marginBottom="8dp"
                         android:fontFamily="@font/timeburnernormal"
-                        android:onClick="openTealX"
+                        android:onClick="openStandard"
                         android:text="@string/view"
-                        android:textColor="@color/teal"
+                        android:textColor="#fff"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -111,7 +111,7 @@
                         android:fontFamily="@font/timeburnernormal"
                         android:gravity="center"
                         android:onClick="downloadParser"
-                        android:tag="25"
+                        android:tag="0"
                         android:text="@string/download"
                         android:textSize="12sp"
                         android:visibility="visible"

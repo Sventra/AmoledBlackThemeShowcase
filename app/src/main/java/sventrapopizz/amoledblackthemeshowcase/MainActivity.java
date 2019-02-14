@@ -414,6 +414,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openNavigation(new InvertedFragment());
     }
 
+    public void openInvertedX(View view) {
+        getSupportActionBar().setTitle("Inverted X");
+        openNavigation(new InvertedXFragment());
+    }
+
     public void openInvertedInferno(View view) {
         getSupportActionBar().setTitle("Inverted Inferno");
         openNavigation(new InvertedInfernoFragment());

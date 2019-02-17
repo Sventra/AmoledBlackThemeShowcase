@@ -329,6 +329,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openNavigation(new InfernoXFragment());
     }
 
+    public void openJamX(View view) {
+        getSupportActionBar().setTitle("Jam X");
+        openNavigation(new JamXFragment());
+    }
+
     public void openLeague(View view) {
         getSupportActionBar().setTitle("LoL Chat");
         openNavigation(new LeagueFragment());
@@ -444,11 +449,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 openNavOther(findViewById(R.id.fragment_container));
                 break;
             case R.id.nav_openchannel:
-                uri = Uri.parse("https://t.me/ABTheme");
+                uri = Uri.parse("https://telegram.dog/ABTheme");
                 newIntent(uri);
                 break;
             case R.id.nav_contact:
-                uri = Uri.parse("https://t.me/SventraPopizz");
+                uri = Uri.parse("https://telegram.dog/SventraPopizz");
                 newIntent(uri);
                 break;
         }

@@ -50,8 +50,6 @@
         android:id="@+id/cardNavPB"
         android:layout_width="120dp"
         android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:onClick="openNavPureBlack"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"

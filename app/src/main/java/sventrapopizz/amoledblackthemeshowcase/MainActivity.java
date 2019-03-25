@@ -24,7 +24,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import static sventrapopizz.amoledblackthemeshowcase.HomeFragment.isInFront;
-import static sventrapopizz.amoledblackthemeshowcase.NavigationInvertedFragment.invertedIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.NavigationOtherThemesFragment.otherIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.NavigationPureBlackFragment.pureBlackIsInFront;
 import static sventrapopizz.amoledblackthemeshowcase.NavigationTGXThemesFragment.TGXIsInFront;
@@ -253,6 +252,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (getSupportFragmentManager().getBackStackEntryCount() > 5) {
             getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
         }
+        getSupportActionBar().setTitle("ABTheme Showcase");
         getSupportFragmentManager().beginTransaction().addToBackStack(null).setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.fragment_container, new HomeFragment()).commit();
         NavigationView navigationView = findViewById(R.id.nav_view);
 
@@ -270,11 +270,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void openNavTGX(View view) {
         getSupportActionBar().setTitle("Telegram X Themes");
         openThemePage(new NavigationTGXThemesFragment(), R.id.navigation_tgxThemes);
-    }
-
-    public void openNavInverted(View view) {
-        getSupportActionBar().setTitle("Inverted Themes");
-        openThemePage(new NavigationInvertedFragment(), R.id.navigation_invertedThemes);
     }
 
     public void openNavOther(View view) {
@@ -442,9 +437,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.navigation_tgxThemes:
                 openNavTGX(findViewById(R.id.fragment_container));
                 break;
-            case R.id.navigation_invertedThemes:
-                openNavInverted(findViewById(R.id.fragment_container));
-                break;
             case R.id.navigation_otherThemes:
                 openNavOther(findViewById(R.id.fragment_container));
                 break;
@@ -482,9 +474,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             } else if (TGXIsInFront) {
                 getSupportActionBar().setTitle("Telegram X Themes");
                 navigationView.setCheckedItem(R.id.navigation_tgxThemes);
-            } else if (invertedIsInFront) {
-                getSupportActionBar().setTitle("Inverted Themes");
-                navigationView.setCheckedItem(R.id.navigation_otherThemes);
             } else if (otherIsInFront) {
                 getSupportActionBar().setTitle("Other Themes");
                 navigationView.setCheckedItem(R.id.navigation_otherThemes);

@@ -31,7 +31,7 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="#373737"
+                app:cardBackgroundColor="#202020"
                 app:cardCornerRadius="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -381,7 +381,7 @@
                         android:layout_height="95dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="10dp"
-                        android:onClick="openAutumn"
+                        android:onClick="openAu"
                         android:visibility="visible"
                         app:cardBackgroundColor="@android:color/transparent"
                         app:cardCornerRadius="12dp"
@@ -407,7 +407,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_square_autumn" />
+                                app:srcCompat="@drawable/ic_square_au" />
 
                             <TextView
                                 android:id="@+id/textView50"
@@ -416,8 +416,8 @@
                                 android:layout_marginBottom="8dp"
                                 android:fontFamily="@font/timeburnernormal"
                                 android:gravity="center"
-                                android:text="Autumn"
-                                android:textColor="@color/autumn"
+                                android:text="Au"
+                                android:textColor="@color/au"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="@+id/imageView50"
                                 app:layout_constraintStart_toStartOf="@+id/imageView50"

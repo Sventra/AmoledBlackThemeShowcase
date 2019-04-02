@@ -175,13 +175,13 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/cardView1"
                 android:layout_width="match_parent"
-                android:layout_height="480dp"
+                android:layout_height="545dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                app:cardBackgroundColor="#151515"
+                app:cardBackgroundColor="#202020"
                 app:cardCornerRadius="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -196,13 +196,13 @@
                         android:id="@+id/cardView7"
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="24dp"
                         app:cardBackgroundColor="#6b6b6b"
                         app:cardCornerRadius="0dp"
                         app:cardElevation="0dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView18">
+                        app:layout_constraintTop_toBottomOf="@+id/imageView24">
 
                     </android.support.v7.widget.CardView>
 
@@ -210,7 +210,7 @@
                         android:id="@+id/cardView6"
                         android:layout_width="0dp"
                         android:layout_height="1dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="24dp"
                         app:cardBackgroundColor="#6b6b6b"
                         app:cardCornerRadius="0dp"
                         app:cardElevation="0dp"
@@ -274,7 +274,7 @@
                         app:cardElevation="0dp"
                         app:layout_constraintBottom_toTopOf="@+id/cardView7"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView23">
+                        app:layout_constraintTop_toBottomOf="@+id/textView24">
 
                         <android.support.constraint.ConstraintLayout
                             android:layout_width="match_parent"
@@ -309,7 +309,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginLeft="16dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="12dp"
                         android:fontFamily="@font/timeburnernormal"
                         android:text="Pure Black Themes"
                         android:textColor="#fff"
@@ -358,7 +358,7 @@
                         android:layout_height="32dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginLeft="16dp"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView12"
                         app:srcCompat="@drawable/ic_square_crimson" />
@@ -383,7 +383,7 @@
                         android:layout_marginLeft="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/imageView16"
-                        app:srcCompat="@drawable/ic_square_pixel" />
+                        app:srcCompat="@drawable/ic_square_teal" />
 
                     <TextView
                         android:id="@+id/textView23"
@@ -393,7 +393,7 @@
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="3dp"
                         android:fontFamily="@font/timeburnernormal"
-                        android:text="Pixel Blue"
+                        android:text="Teal"
                         app:layout_constraintStart_toEndOf="@+id/imageView17"
                         app:layout_constraintTop_toTopOf="@+id/imageView17" />
 
@@ -405,7 +405,7 @@
                         android:layout_marginLeft="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/imageView17"
-                        app:srcCompat="@drawable/ic_square_teal" />
+                        app:srcCompat="@drawable/ic_square_pixel" />
 
                     <TextView
                         android:id="@+id/textView24"
@@ -415,7 +415,7 @@
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="3dp"
                         android:fontFamily="@font/timeburnernormal"
-                        android:text="Teal"
+                        android:text="Pixel Blue"
                         app:layout_constraintStart_toEndOf="@+id/imageView18"
                         app:layout_constraintTop_toTopOf="@+id/imageView18" />
 
@@ -425,7 +425,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginLeft="16dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="12dp"
                         android:fontFamily="@font/timeburnernormal"
                         android:text="Pure Black Themes - X"
                         android:textColor="#fff"
@@ -439,7 +439,7 @@
                         android:layout_height="32dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginLeft="16dp"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView25"
                         app:srcCompat="@drawable/ic_square_inferno" />
@@ -506,7 +506,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginLeft="16dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="12dp"
                         android:fontFamily="@font/timeburnernormal"
                         android:text="Other themes"
                         android:textColor="#fff"
@@ -520,7 +520,7 @@
                         android:layout_height="32dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginLeft="16dp"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView37"
                         app:srcCompat="@drawable/ic_square_inverted" />
@@ -602,6 +602,28 @@
                         android:text="Steam"
                         app:layout_constraintStart_toEndOf="@+id/imageView26"
                         app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+                        app:srcCompat="@drawable/ic_square_autumn" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/timeburnernormal"
+                        android:text="Autumn"
+                        app:layout_constraintStart_toEndOf="@+id/imageView24"
+                        app:layout_constraintTop_toTopOf="@+id/imageView24" />
 
                 </android.support.constraint.ConstraintLayout>
             </android.support.v7.widget.CardView>

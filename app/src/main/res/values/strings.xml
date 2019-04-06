@@ -100,6 +100,7 @@
     <string name="take_me_home">TAKE ME HOME</string>
     <string name="bring_me_back">BACK</string>
     <string name="minussymbol"><![CDATA[<]]></string>
-
+    <string name="pure_black_nav">"Pure\nBlack\nThemes"</string>
+    <string name="other_themes_nav">"Other\nThemes"</string>
 
 </resources>

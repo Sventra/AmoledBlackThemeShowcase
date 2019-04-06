@@ -7,14 +7,14 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavBg"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         app:cardBackgroundColor="#0C131D"
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavBack"
         android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:onClick="openNavOther"
         app:cardBackgroundColor="#16202A"
         app:cardCornerRadius="0dp"
@@ -50,9 +50,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavPB"
         android:layout_width="120dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_height="65dp"
         android:onClick="openNavPureBlack"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
@@ -69,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/timeburnernormal"
                 android:gravity="center"
-                android:text="Pure\nBlack\nThemes"
+                android:text="@string/pure_black_nav"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +79,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavTGX"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:onClick="openNavTGX"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
@@ -112,7 +110,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavOthers"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:onClick="openNavOther"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
@@ -140,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/timeburnernormal"
                 android:gravity="center"
-                android:text="Other\nThemes"
+                android:text="@string/other_themes_nav"
                 android:textColor="#fff"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"

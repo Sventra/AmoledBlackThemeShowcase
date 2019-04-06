@@ -18,6 +18,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -263,22 +264,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }*/
 
     public void openNavPureBlack(View view) {
-        getSupportActionBar().setTitle("Pure Black Themes");
+        getSupportActionBar().setTitle(R.string.pure_black_themes);
         openThemePage(new NavigationPureBlackFragment(), R.id.navigation_home);
     }
 
     public void openNavTGX(View view) {
-        getSupportActionBar().setTitle("Telegram X Themes");
+        getSupportActionBar().setTitle(R.string.tgx_themes);
         openThemePage(new NavigationTGXThemesFragment(), R.id.navigation_tgxThemes);
     }
 
     public void openNavOther(View view) {
-        getSupportActionBar().setTitle("Other Themes");
+        getSupportActionBar().setTitle(R.string.other_themes);
         openThemePage(new NavigationOtherThemesFragment(), R.id.navigation_otherThemes);
     }
 
     public void openSettings() {
-        getSupportActionBar().setTitle("Settings");
+        getSupportActionBar().setTitle(R.string.action_settings);
         openThemePage(new SettingsFragment(), R.id.nav_home);
     }
 
@@ -469,13 +470,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 navigationView.setCheckedItem(R.id.nav_home);
                 getSupportFragmentManager().popBackStack(root, FragmentManager.POP_BACK_STACK_INCLUSIVE);
             } else if (pureBlackIsInFront) {
-                getSupportActionBar().setTitle("Pure Black Themes");
+                getSupportActionBar().setTitle(R.string.pure_black_themes);
                 navigationView.setCheckedItem(R.id.navigation_home);
             } else if (TGXIsInFront) {
-                getSupportActionBar().setTitle("Telegram X Themes");
+                getSupportActionBar().setTitle(R.string.tgx_themes);
                 navigationView.setCheckedItem(R.id.navigation_tgxThemes);
             } else if (otherIsInFront) {
-                getSupportActionBar().setTitle("Other Themes");
+                getSupportActionBar().setTitle(R.string.other_themes);
                 navigationView.setCheckedItem(R.id.navigation_otherThemes);
             }
         }
@@ -487,7 +488,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getDelegate().onDestroy();
     }
 
-    /*
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -509,5 +510,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         return super.onOptionsItemSelected(item);
-    }*/
+    }
 }

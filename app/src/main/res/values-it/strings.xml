@@ -88,6 +88,8 @@
     <string name="lastUpdate_invertedx">Fatto per TGX BETA 0.21.3.1037</string>
     <string name="version_jamx">Scarica</string>
     <string name="lastUpdate_jamx">Fatto per TGX BETA 0.21.3.1037</string>
+    <string name="pure_black_nav">"Temi\nTotalmente\nNeri"</string>
+    <string name="other_themes_nav">"Altri\nTemi"</string>
 
 
 </resources>

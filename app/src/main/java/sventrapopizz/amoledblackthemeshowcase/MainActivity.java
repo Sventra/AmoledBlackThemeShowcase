@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // Open Channel
     public void browser1(View view) {
-        Uri uri = Uri.parse("https://t.me/ABTheme");
+        Uri uri = Uri.parse("https://https://telegram.dog/ABTheme//ABTheme");
         newIntent(uri);
     }
 
     // This method will open the chat with myself
     public void contactMe(View view) {
-        Uri uri = Uri.parse("https://t.me/SventraPopizz");
+        Uri uri = Uri.parse("https://https://telegram.dog/ABTheme//SventraPopizz");
         newIntent(uri);
     }
 
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 if (internet_connection()) {
                     try {
                         metodone();
-                        Uri uri = Uri.parse("https://t.me/ABTheme/" + parts[partNumber]);
+                        Uri uri = Uri.parse("https://telegram.dog/ABTheme/" + parts[partNumber]);
                         newIntent(uri);
                     } catch (Exception e) {
                         e.printStackTrace();

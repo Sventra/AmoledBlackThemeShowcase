@@ -13,7 +13,7 @@ public class RetriveFeedTask2 extends AsyncTask {
     @Override
     protected Object doInBackground(Object[] objects) {
         try {
-            Document doc = Jsoup.connect("https://t.me/amoledblackthemeshowcasesupport/11?embed=1").get();
+            Document doc = Jsoup.connect("https://telegram.dog/amoledblackthemeshowcasesupport/11?embed=1").get();
             String version = doc.select("div.tgme_widget_message_text").text();
             return version;
         } catch (IOException e) {

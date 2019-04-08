@@ -151,7 +151,8 @@
                         app:cardElevation="0dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/cardViewButton6"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <android.support.constraint.ConstraintLayout
                             android:layout_width="match_parent"
@@ -205,7 +206,8 @@
                         app:cardElevation="0dp"
                         app:layout_constraintEnd_toStartOf="@+id/cardViewButton7"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <android.support.constraint.ConstraintLayout
                             android:layout_width="match_parent"
@@ -261,7 +263,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/cardViewButton2"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0">
+                        app:layout_constraintVertical_bias="1.0"
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <android.support.constraint.ConstraintLayout
                             android:layout_width="match_parent"
@@ -315,7 +318,8 @@
                         app:cardElevation="0dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/cardViewButton5"
-                        app:layout_constraintStart_toStartOf="parent">
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <android.support.constraint.ConstraintLayout
                             android:layout_width="match_parent"

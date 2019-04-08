@@ -223,7 +223,8 @@
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:foreground="?android:attr/selectableItemBackground">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -259,7 +260,8 @@
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cardNavBack">
+        app:layout_constraintStart_toEndOf="@+id/cardNavBack"
+        android:foreground="?android:attr/selectableItemBackground">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -289,7 +291,8 @@
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardNavPB"
         app:layout_constraintEnd_toStartOf="@+id/cardNavOthers"
-        app:layout_constraintStart_toEndOf="@+id/cardNavPB">
+        app:layout_constraintStart_toEndOf="@+id/cardNavPB"
+        android:foreground="?android:attr/selectableItemBackground">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -319,7 +322,8 @@
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cardNavTGX">
+        app:layout_constraintStart_toEndOf="@+id/cardNavTGX"
+        android:foreground="?android:attr/selectableItemBackground">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"

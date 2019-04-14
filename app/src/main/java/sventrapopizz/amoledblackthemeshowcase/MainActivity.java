@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // Open Channel
     public void browser1(View view) {
-        Uri uri = Uri.parse("https://https://telegram.dog/ABTheme//ABTheme");
+        Uri uri = Uri.parse("https://telegram.dog/ABTheme");
         newIntent(uri);
     }
 
     // This method will open the chat with myself
     public void contactMe(View view) {
-        Uri uri = Uri.parse("https://https://telegram.dog/ABTheme//SventraPopizz");
+        Uri uri = Uri.parse("https://telegram.dog/SventraPopizz");
         newIntent(uri);
     }
 

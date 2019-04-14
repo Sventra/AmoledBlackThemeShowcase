@@ -14,7 +14,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         app:cardBackgroundColor="#202020"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@+id/cardNavBg"
@@ -98,14 +98,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openSaints"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton21"
-                    app:layout_constraintTop_toBottomOf="@+id/textView34"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView34">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -150,14 +150,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openPhlox"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView34"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView34">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -230,14 +230,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openOrange"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton19"
-                    app:layout_constraintTop_toBottomOf="@+id/textView29"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView29">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -282,14 +282,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openLeague"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton18"
-                    app:layout_constraintTop_toBottomOf="@+id/textView29"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView29">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -334,14 +334,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openAutumn"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton17"
-                    app:layout_constraintTop_toBottomOf="@+id/textView29"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView29">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -386,14 +386,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openAu"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView29"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView29">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -466,14 +466,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openPixelBlue"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton15"
-                    app:layout_constraintTop_toBottomOf="@+id/textView28"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView28">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -520,6 +520,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openOxygen"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
@@ -527,8 +528,7 @@
                     app:cardElevation="0dp"
                     app:layout_constraintEnd_toStartOf="@+id/cardViewButton16"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton14"
-                    app:layout_constraintTop_toBottomOf="@+id/textView28"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView28">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -575,14 +575,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openCyanogen"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView28"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView28">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -657,14 +657,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openTeal"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton12"
-                    app:layout_constraintTop_toBottomOf="@+id/textView27"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView27">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -709,14 +709,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openMonster"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton11"
-                    app:layout_constraintTop_toBottomOf="@+id/textView27"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView27">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -761,14 +761,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openMint"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton10"
-                    app:layout_constraintTop_toBottomOf="@+id/textView27"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView27">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -815,14 +815,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openGreenSunset"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView27"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView27">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -897,14 +897,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openRedleaf"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton8"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView20">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -949,14 +949,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openRed"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton7"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView20">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1001,14 +1001,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openQuetzal"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton6"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView20">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1055,14 +1055,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openCrimson"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView20">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1137,14 +1137,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openPhlox"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton4"
-                    app:layout_constraintTop_toBottomOf="@+id/textView1"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView1">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1191,14 +1191,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openCrimson"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton3"
-                    app:layout_constraintTop_toBottomOf="@+id/textView1"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView1">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1245,14 +1245,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openPixelBlue"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toEndOf="@+id/cardViewButton2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView1"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView1">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1299,14 +1299,14 @@
                     android:layout_height="95dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openStandard"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="0dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView1"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView1">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -1369,20 +1369,20 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavBg"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         app:cardBackgroundColor="#0C131D"
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavBack"
         android:layout_width="80dp"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:onClick="openHome"
         app:cardBackgroundColor="#16202A"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:layout_constraintStart_toStartOf="parent">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -1398,7 +1398,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/timeburnernormal"
+                android:fontFamily="@font/montserrat"
                 android:text="@string/minussymbol"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -1413,12 +1413,12 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavPB"
         android:layout_width="120dp"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cardNavBack"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:layout_constraintStart_toEndOf="@+id/cardNavBack">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -1437,10 +1437,11 @@
                 android:id="@+id/textView44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/timeburnernormal"
+                android:fontFamily="@font/raleway_bold"
                 android:gravity="center"
                 android:text="@string/pure_black_nav"
                 android:textColor="#fff"
+                android:textSize="11sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -1452,14 +1453,14 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavTGX"
         android:layout_width="0dp"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:onClick="openNavTGX"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardNavPB"
         app:layout_constraintEnd_toStartOf="@+id/cardNavOthers"
-        app:layout_constraintStart_toEndOf="@+id/cardNavPB"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:layout_constraintStart_toEndOf="@+id/cardNavPB">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -1469,9 +1470,10 @@
                 android:id="@+id/textView45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/timeburnernormal"
+                android:fontFamily="@font/raleway_bold"
                 android:gravity="center"
                 android:text="Telegram\nX"
+                android:textSize="11sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -1484,15 +1486,15 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavOthers"
         android:layout_width="0dp"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:onClick="openNavOther"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cardNavTGX"
-        app:layout_constraintTop_toTopOf="@+id/cardNavTGX"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:layout_constraintTop_toTopOf="@+id/cardNavTGX">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -1502,9 +1504,10 @@
                 android:id="@+id/textView46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/timeburnernormal"
+                android:fontFamily="@font/raleway_bold"
                 android:gravity="center"
                 android:text="@string/other_themes_nav"
+                android:textSize="11sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

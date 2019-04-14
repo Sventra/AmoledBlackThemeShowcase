@@ -9,7 +9,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardHeader"
         android:layout_width="0dp"
-        android:layout_height="125dp"
+        android:layout_height="100dp"
         app:cardBackgroundColor="#121212"
         app:cardCornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,10 +33,10 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/news1Card"
                 android:layout_width="132dp"
-                android:layout_height="96dp"
+                android:layout_height="75dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 app:cardBackgroundColor="#000"
                 app:cardCornerRadius="14dp"
@@ -59,8 +59,8 @@
 
                     <ImageView
                         android:id="@+id/imageView3"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/ic_square_jam" />
@@ -69,11 +69,11 @@
                         android:id="@+id/textView7"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/timeburnernormal"
+                        android:fontFamily="@font/raleway_bold"
                         android:gravity="center"
                         android:text="@string/news1Content"
                         android:textColor="#fff"
-                        android:textSize="12sp"
+                        android:textSize="11sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +89,8 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
                         android:layout_marginBottom="5dp"
-                        android:fontFamily="@font/timeburnernormal"
+                        android:fontFamily="@font/raleway_bold"
+                        android:foreground="?android:attr/selectableItemBackground"
                         android:onClick="openJamX"
                         android:text="@string/view"
                         android:textColor="@color/jam"
@@ -97,8 +98,7 @@
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/textView10"
-                        android:foreground="?android:attr/selectableItemBackground"/>
+                        app:layout_constraintStart_toEndOf="@+id/textView10" />
 
                     <TextView
                         android:id="@+id/textView10"
@@ -108,7 +108,8 @@
                         android:layout_marginLeft="8dp"
                         android:layout_marginEnd="8dp"
                         android:layout_marginRight="8dp"
-                        android:fontFamily="@font/timeburnernormal"
+                        android:fontFamily="@font/raleway_bold"
+                        android:foreground="?android:attr/selectableItemBackground"
                         android:gravity="center"
                         android:onClick="downloadParser"
                         android:tag="27"
@@ -119,8 +120,7 @@
                         app:layout_constraintBottom_toBottomOf="@+id/textView8"
                         app:layout_constraintEnd_toStartOf="@+id/textView8"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/textView8"
-                        android:foreground="?android:attr/selectableItemBackground"/>
+                        app:layout_constraintTop_toTopOf="@+id/textView8" />
                 </android.support.constraint.ConstraintLayout>
 
             </android.support.v7.widget.CardView>
@@ -131,7 +131,7 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginLeft="24dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:onClick="contactMe"
@@ -145,10 +145,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:fontFamily="@font/timeburnernormal"
+                android:fontFamily="@font/raleway"
                 android:onClick="contactMe"
                 android:text="@string/username"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView2"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -164,10 +164,10 @@
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         app:cardBackgroundColor="#202020"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@+id/cardNavBg"
@@ -179,11 +179,10 @@
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="8dp"
             android:clipToPadding="false"
-            android:fillViewport="true"
-            app:layout_constraintBottom_toTopOf="@+id/cardNavBg"
-            app:layout_constraintTop_toBottomOf="@+id/cardHeader">
+            android:fillViewport="false"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
@@ -247,7 +246,7 @@
                             android:layout_marginEnd="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginBottom="2dp"
-                            android:fontFamily="@font/timeburnernormal"
+                            android:fontFamily="@font/raleway_bold"
                             android:text="@string/view_all"
                             android:textColor="#fff"
                             android:textSize="18sp"
@@ -290,7 +289,7 @@
                             android:layout_marginEnd="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginBottom="2dp"
-                            android:fontFamily="@font/timeburnernormal"
+                            android:fontFamily="@font/raleway_bold"
                             android:text="@string/view_all"
                             android:textColor="#fff"
                             android:textSize="18sp"
@@ -310,7 +309,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="12dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Pure Black Themes"
                     android:textColor="#fff"
                     android:textSize="14sp"
@@ -322,6 +321,7 @@
                     android:layout_width="148dp"
                     android:layout_height="0dp"
                     android:layout_marginTop="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="openNavOther"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
@@ -329,8 +329,7 @@
                     app:cardElevation="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView49"
-                    android:foreground="?android:attr/selectableItemBackground">
+                    app:layout_constraintTop_toBottomOf="@+id/textView49">
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -346,7 +345,7 @@
                             android:layout_marginEnd="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginBottom="2dp"
-                            android:fontFamily="@font/timeburnernormal"
+                            android:fontFamily="@font/raleway_bold"
                             android:text="@string/view_all"
                             android:textColor="#fff"
                             android:textSize="18sp"
@@ -377,7 +376,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Crimson"
                     app:layout_constraintStart_toEndOf="@+id/imageView16"
                     app:layout_constraintTop_toTopOf="@+id/imageView16" />
@@ -399,7 +398,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Teal"
                     app:layout_constraintStart_toEndOf="@+id/imageView17"
                     app:layout_constraintTop_toTopOf="@+id/imageView17" />
@@ -421,7 +420,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Pixel Blue"
                     app:layout_constraintStart_toEndOf="@+id/imageView18"
                     app:layout_constraintTop_toTopOf="@+id/imageView18" />
@@ -433,7 +432,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="12dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Pure Black Themes - X"
                     android:textColor="#fff"
                     android:textSize="14sp"
@@ -478,7 +477,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Inferno"
                     app:layout_constraintStart_toEndOf="@+id/imageView19"
                     app:layout_constraintTop_toTopOf="@+id/imageView19" />
@@ -490,7 +489,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Pixel Blue - X"
                     app:layout_constraintStart_toEndOf="@+id/imageView20"
                     app:layout_constraintTop_toTopOf="@+id/imageView20" />
@@ -502,7 +501,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Jam"
                     app:layout_constraintStart_toEndOf="@+id/imageView21"
                     app:layout_constraintTop_toTopOf="@+id/imageView21" />
@@ -514,7 +513,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="12dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Other themes"
                     android:textColor="#fff"
                     android:textSize="14sp"
@@ -539,7 +538,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Inverted"
                     app:layout_constraintStart_toEndOf="@+id/imageView22"
                     app:layout_constraintTop_toTopOf="@+id/imageView22" />
@@ -561,7 +560,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Inverted Inferno"
                     app:layout_constraintStart_toEndOf="@+id/imageView23"
                     app:layout_constraintTop_toTopOf="@+id/imageView23" />
@@ -583,7 +582,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="AOSPEx"
                     app:layout_constraintStart_toEndOf="@+id/imageView25"
                     app:layout_constraintTop_toTopOf="@+id/imageView25" />
@@ -605,7 +604,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Steam"
                     app:layout_constraintStart_toEndOf="@+id/imageView26"
                     app:layout_constraintTop_toTopOf="@+id/imageView26" />
@@ -627,7 +626,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/timeburnernormal"
+                    android:fontFamily="@font/raleway_bold"
                     android:text="Autumn"
                     app:layout_constraintStart_toEndOf="@+id/imageView24"
                     app:layout_constraintTop_toTopOf="@+id/imageView24" />
@@ -640,14 +639,14 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavBg"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         app:cardBackgroundColor="#0C131D"
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavBack"
         android:layout_width="80dp"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         app:cardBackgroundColor="#222"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -667,7 +666,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/timeburnernormal"
+                android:fontFamily="@font/montserrat"
                 android:text="@string/minussymbol"
                 android:textColor="#444"
                 android:textSize="36sp"
@@ -683,13 +682,13 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavPB"
         android:layout_width="120dp"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:onClick="openNavPureBlack"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cardNavBack"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:layout_constraintStart_toEndOf="@+id/cardNavBack">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -699,9 +698,10 @@
                 android:id="@+id/textView44"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/timeburnernormal"
+                android:fontFamily="@font/raleway_bold"
                 android:gravity="center"
                 android:text="@string/pure_black_nav"
+                android:textSize="11dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -713,14 +713,14 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavTGX"
         android:layout_width="0dp"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:onClick="openNavTGX"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardNavPB"
         app:layout_constraintEnd_toStartOf="@+id/cardNavOthers"
-        app:layout_constraintStart_toEndOf="@+id/cardNavPB"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:layout_constraintStart_toEndOf="@+id/cardNavPB">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -730,9 +730,10 @@
                 android:id="@+id/textView45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/timeburnernormal"
+                android:fontFamily="@font/raleway_bold"
                 android:gravity="center"
                 android:text="Telegram\nX"
+                android:textSize="11dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -744,14 +745,14 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardNavOthers"
         android:layout_width="0dp"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:onClick="openNavOther"
         app:cardBackgroundColor="#0C131D"
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cardNavTGX"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:layout_constraintStart_toEndOf="@+id/cardNavTGX">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -761,9 +762,10 @@
                 android:id="@+id/textView46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/timeburnernormal"
+                android:fontFamily="@font/raleway_bold"
                 android:gravity="center"
                 android:text="@string/other_themes_nav"
+                android:textSize="11dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -170,10 +170,13 @@
         android:layout_marginBottom="4dp"
         app:cardBackgroundColor="#202020"
         app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="false"
         app:layout_constraintBottom_toTopOf="@+id/cardNavBg"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardHeader">
+        app:layout_constraintTop_toBottomOf="@+id/cardHeader"
+        app:layout_constraintVertical_bias="0.0">
 
         <ScrollView
             android:id="@+id/scrollView2"
@@ -185,6 +188,7 @@
             app:layout_constraintTop_toBottomOf="parent">
 
             <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout_editor_absoluteY="63dp">
@@ -375,7 +379,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Crimson"
                     app:layout_constraintStart_toEndOf="@+id/imageView16"
@@ -397,7 +401,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Teal"
                     app:layout_constraintStart_toEndOf="@+id/imageView17"
@@ -419,7 +423,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Pixel Blue"
                     app:layout_constraintStart_toEndOf="@+id/imageView18"
@@ -476,7 +480,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Inferno"
                     app:layout_constraintStart_toEndOf="@+id/imageView19"
@@ -488,7 +492,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Pixel Blue - X"
                     app:layout_constraintStart_toEndOf="@+id/imageView20"
@@ -500,7 +504,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Jam"
                     app:layout_constraintStart_toEndOf="@+id/imageView21"
@@ -537,7 +541,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Inverted"
                     app:layout_constraintStart_toEndOf="@+id/imageView22"
@@ -559,7 +563,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Inverted Inferno"
                     app:layout_constraintStart_toEndOf="@+id/imageView23"
@@ -581,7 +585,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="AOSPEx"
                     app:layout_constraintStart_toEndOf="@+id/imageView25"
@@ -593,6 +597,8 @@
                     android:layout_height="32dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView25"
                     app:srcCompat="@drawable/ic_square_steam" />
@@ -603,7 +609,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Steam"
                     app:layout_constraintStart_toEndOf="@+id/imageView26"
@@ -625,7 +631,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Autumn"
                     app:layout_constraintStart_toEndOf="@+id/imageView24"
@@ -752,7 +758,8 @@
         app:cardCornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cardNavTGX">
+        app:layout_constraintStart_toEndOf="@+id/cardNavTGX"
+        app:layout_constraintTop_toTopOf="@+id/cardNavTGX">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"

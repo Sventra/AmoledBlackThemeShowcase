@@ -379,9 +379,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Crimson"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView17"
                     app:layout_constraintStart_toEndOf="@+id/imageView16"
                     app:layout_constraintTop_toTopOf="@+id/imageView16" />
 
@@ -401,9 +401,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Teal"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView18"
                     app:layout_constraintStart_toEndOf="@+id/imageView17"
                     app:layout_constraintTop_toTopOf="@+id/imageView17" />
 
@@ -423,9 +423,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Pixel Blue"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView24"
                     app:layout_constraintStart_toEndOf="@+id/imageView18"
                     app:layout_constraintTop_toTopOf="@+id/imageView18" />
 
@@ -480,9 +480,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Inferno"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView20"
                     app:layout_constraintStart_toEndOf="@+id/imageView19"
                     app:layout_constraintTop_toTopOf="@+id/imageView19" />
 
@@ -492,9 +492,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Pixel Blue - X"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView21"
                     app:layout_constraintStart_toEndOf="@+id/imageView20"
                     app:layout_constraintTop_toTopOf="@+id/imageView20" />
 
@@ -504,9 +504,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Jam"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView21"
                     app:layout_constraintStart_toEndOf="@+id/imageView21"
                     app:layout_constraintTop_toTopOf="@+id/imageView21" />
 
@@ -541,9 +541,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Inverted"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView23"
                     app:layout_constraintStart_toEndOf="@+id/imageView22"
                     app:layout_constraintTop_toTopOf="@+id/imageView22" />
 
@@ -563,9 +563,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Inverted Inferno"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView25"
                     app:layout_constraintStart_toEndOf="@+id/imageView23"
                     app:layout_constraintTop_toTopOf="@+id/imageView23" />
 
@@ -585,9 +585,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="AOSPEx"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView26"
                     app:layout_constraintStart_toEndOf="@+id/imageView25"
                     app:layout_constraintTop_toTopOf="@+id/imageView25" />
 
@@ -609,9 +609,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Steam"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView26"
                     app:layout_constraintStart_toEndOf="@+id/imageView26"
                     app:layout_constraintTop_toTopOf="@+id/imageView26" />
 
@@ -631,9 +631,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/raleway_bold"
                     android:text="Autumn"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView24"
                     app:layout_constraintStart_toEndOf="@+id/imageView24"
                     app:layout_constraintTop_toTopOf="@+id/imageView24" />
 

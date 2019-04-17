@@ -77,30 +77,30 @@
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
                 android:fontFamily="@font/raleway"
                 android:text="ABTheme AU"
                 android:textColor="#ffcc2e"
                 android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView4"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintTop_toTopOf="@+id/cardView4" />
 
             <android.support.v7.widget.CardView
                 android:id="@+id/cardView4"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="downloadParser"
                 android:tag="1"
                 app:cardBackgroundColor="#ffcc2e"
-                app:cardCornerRadius="25dp"
+                app:cardCornerRadius="4dp"
                 app:cardElevation="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView13"
@@ -140,7 +140,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
-                app:cardCornerRadius="20dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -156,17 +156,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginLeft="16dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="4dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
-                        android:layout_marginBottom="16dp"
+                        android:layout_marginBottom="4dp"
                         android:fontFamily="@font/timeburnernormal"
                         android:text="@string/similar_themes"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/cardView6"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.0" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
                         android:id="@+id/imageView4"
@@ -184,7 +183,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/textView15"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView14"
-                        app:srcCompat="@drawable/ic_square_autumn" />
+                        app:srcCompat="@drawable/ic_lens_autumn" />
 
                     <ImageView
                         android:id="@+id/imageView6"
@@ -202,7 +201,7 @@
                         app:layout_constraintEnd_toEndOf="@+id/textView14"
                         app:layout_constraintStart_toStartOf="@+id/textView14"
                         app:layout_constraintTop_toBottomOf="@+id/textView14"
-                        app:srcCompat="@drawable/ic_square_league" />
+                        app:srcCompat="@drawable/ic_lens_league" />
 
                     <ImageView
                         android:id="@+id/imageView7"
@@ -220,7 +219,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/textView15"
                         app:layout_constraintTop_toBottomOf="@+id/cardView6"
-                        app:srcCompat="@drawable/ic_square_orange" />
+                        app:srcCompat="@drawable/ic_lens_orange" />
 
                     <TextView
                         android:id="@+id/textView22"
@@ -292,8 +291,7 @@
                         app:cardElevation="0dp"
                         app:layout_constraintBottom_toTopOf="@+id/imageView6"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                        app:layout_constraintStart_toStartOf="parent" />
 
                 </android.support.constraint.ConstraintLayout>
             </android.support.v7.widget.CardView>

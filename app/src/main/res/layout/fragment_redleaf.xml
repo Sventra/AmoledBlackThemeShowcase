@@ -174,7 +174,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/textView15"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView14"
-                        app:srcCompat="@drawable/ic_square_crimson" />
+                        app:srcCompat="@drawable/ic_lens_crimson" />
 
                     <ImageView
                         android:id="@+id/imageView6"
@@ -192,7 +192,7 @@
                         app:layout_constraintEnd_toEndOf="@+id/textView14"
                         app:layout_constraintStart_toStartOf="@+id/textView14"
                         app:layout_constraintTop_toBottomOf="@+id/textView14"
-                        app:srcCompat="@drawable/ic_square_quetzal" />
+                        app:srcCompat="@drawable/ic_lens_quetzal" />
 
                     <ImageView
                         android:id="@+id/imageView7"
@@ -210,7 +210,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/textView15"
                         app:layout_constraintTop_toBottomOf="@+id/cardView6"
-                        app:srcCompat="@drawable/ic_square_red" />
+                        app:srcCompat="@drawable/ic_lens_red" />
 
                     <TextView
                         android:id="@+id/textView22"

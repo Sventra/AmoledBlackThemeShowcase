@@ -204,7 +204,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_square_inverted" />
+                                app:srcCompat="@drawable/ic_lens_inverted" />
 
                             <TextView
                                 android:id="@+id/textView8"
@@ -261,7 +261,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_square_steam" />
+                                app:srcCompat="@drawable/ic_lens_steam" />
 
                             <TextView
                                 android:id="@+id/textView7"

@@ -63,7 +63,7 @@
                         android:layout_height="50dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_square_jam" />
+                        app:srcCompat="@drawable/ic_lens_jam" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -371,7 +371,7 @@
                     android:layout_marginTop="8dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView12"
-                    app:srcCompat="@drawable/ic_square_crimson" />
+                    app:srcCompat="@drawable/ic_lens_crimson" />
 
                 <TextView
                     android:id="@+id/textView19"
@@ -393,7 +393,7 @@
                     android:layout_marginLeft="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView16"
-                    app:srcCompat="@drawable/ic_square_teal" />
+                    app:srcCompat="@drawable/ic_lens_teal" />
 
                 <TextView
                     android:id="@+id/textView23"
@@ -415,7 +415,7 @@
                     android:layout_marginLeft="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView17"
-                    app:srcCompat="@drawable/ic_square_pixel" />
+                    app:srcCompat="@drawable/ic_lens_pixel" />
 
                 <TextView
                     android:id="@+id/textView24"
@@ -452,7 +452,7 @@
                     android:layout_marginTop="8dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView25"
-                    app:srcCompat="@drawable/ic_square_inferno" />
+                    app:srcCompat="@drawable/ic_lens_inferno" />
 
                 <ImageView
                     android:id="@+id/imageView20"
@@ -462,7 +462,7 @@
                     android:layout_marginLeft="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView19"
-                    app:srcCompat="@drawable/ic_square_pixel" />
+                    app:srcCompat="@drawable/ic_lens_pixel" />
 
                 <ImageView
                     android:id="@+id/imageView21"
@@ -472,7 +472,7 @@
                     android:layout_marginLeft="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView20"
-                    app:srcCompat="@drawable/ic_square_jam" />
+                    app:srcCompat="@drawable/ic_lens_jam" />
 
                 <TextView
                     android:id="@+id/textView26"
@@ -533,7 +533,7 @@
                     android:layout_marginTop="8dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView37"
-                    app:srcCompat="@drawable/ic_square_inverted" />
+                    app:srcCompat="@drawable/ic_lens_inverted" />
 
                 <TextView
                     android:id="@+id/textView38"
@@ -601,7 +601,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView25"
-                    app:srcCompat="@drawable/ic_square_steam" />
+                    app:srcCompat="@drawable/ic_lens_steam" />
 
                 <TextView
                     android:id="@+id/textView54"
@@ -623,7 +623,7 @@
                     android:layout_marginLeft="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView18"
-                    app:srcCompat="@drawable/ic_square_autumn" />
+                    app:srcCompat="@drawable/ic_lens_autumn" />
 
                 <TextView
                     android:id="@+id/textView42"

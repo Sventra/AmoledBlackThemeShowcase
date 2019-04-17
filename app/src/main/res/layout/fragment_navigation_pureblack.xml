@@ -125,7 +125,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_saints" />
+                            app:srcCompat="@drawable/ic_lens_saints" />
 
                         <TextView
                             android:id="@+id/textView61"
@@ -177,7 +177,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_phlox" />
+                            app:srcCompat="@drawable/ic_lens_phlox" />
 
                         <TextView
                             android:id="@+id/textView60"
@@ -257,7 +257,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_orange" />
+                            app:srcCompat="@drawable/ic_lens_orange" />
 
                         <TextView
                             android:id="@+id/textView53"
@@ -309,7 +309,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_league" />
+                            app:srcCompat="@drawable/ic_lens_league" />
 
                         <TextView
                             android:id="@+id/textView52"
@@ -361,7 +361,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_autumn" />
+                            app:srcCompat="@drawable/ic_lens_autumn" />
 
                         <TextView
                             android:id="@+id/textView51"
@@ -413,7 +413,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_au" />
+                            app:srcCompat="@drawable/ic_lens_au" />
 
                         <TextView
                             android:id="@+id/textView50"
@@ -493,7 +493,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_pixel" />
+                            app:srcCompat="@drawable/ic_lens_pixel" />
 
                         <TextView
                             android:id="@+id/textView43"
@@ -548,7 +548,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_oxygen" />
+                            app:srcCompat="@drawable/ic_lens_oxygen" />
 
                         <TextView
                             android:id="@+id/textView41"
@@ -602,7 +602,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_cyanogen" />
+                            app:srcCompat="@drawable/ic_lens_cyanogen" />
 
                         <TextView
                             android:id="@+id/textView40"
@@ -684,7 +684,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_teal" />
+                            app:srcCompat="@drawable/ic_lens_teal" />
 
                         <TextView
                             android:id="@+id/textView33"
@@ -736,7 +736,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_monster" />
+                            app:srcCompat="@drawable/ic_lens_monster" />
 
                         <TextView
                             android:id="@+id/textView32"
@@ -788,7 +788,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_mint" />
+                            app:srcCompat="@drawable/ic_lens_mint" />
 
                         <TextView
                             android:id="@+id/textView31"
@@ -842,7 +842,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_greensunset" />
+                            app:srcCompat="@drawable/ic_lens_greensunset" />
 
                         <TextView
                             android:id="@+id/textView30"
@@ -924,7 +924,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_redleaf" />
+                            app:srcCompat="@drawable/ic_lens_redleaf" />
 
                         <TextView
                             android:id="@+id/textView11"
@@ -976,7 +976,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_red" />
+                            app:srcCompat="@drawable/ic_lens_red" />
 
                         <TextView
                             android:id="@+id/textView10"
@@ -1028,7 +1028,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_quetzal" />
+                            app:srcCompat="@drawable/ic_lens_quetzal" />
 
                         <TextView
                             android:id="@+id/textView9"
@@ -1082,7 +1082,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_crimson" />
+                            app:srcCompat="@drawable/ic_lens_crimson" />
 
                         <TextView
                             android:id="@+id/textView8"
@@ -1164,7 +1164,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_phlox" />
+                            app:srcCompat="@drawable/ic_lens_phlox" />
 
                         <TextView
                             android:id="@+id/textView7"
@@ -1218,7 +1218,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_crimson" />
+                            app:srcCompat="@drawable/ic_lens_crimson" />
 
                         <TextView
                             android:id="@+id/textView6"
@@ -1272,7 +1272,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_pixel" />
+                            app:srcCompat="@drawable/ic_lens_pixel" />
 
                         <TextView
                             android:id="@+id/textView5"
@@ -1326,7 +1326,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_standard" />
+                            app:srcCompat="@drawable/ic_lens_standard" />
 
                         <TextView
                             android:id="@+id/textView4"

@@ -63,7 +63,7 @@
                         android:layout_height="50dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_lens_jam" />
+                        app:srcCompat="@drawable/ic_lens_defpurple" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -91,9 +91,9 @@
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/raleway_bold"
                         android:foreground="?android:attr/selectableItemBackground"
-                        android:onClick="openJamX"
+                        android:onClick="openDefPurple"
                         android:text="@string/view"
-                        android:textColor="@color/jam"
+                        android:textColor="@color/defpurple"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,7 +112,7 @@
                         android:foreground="?android:attr/selectableItemBackground"
                         android:gravity="center"
                         android:onClick="downloadParser"
-                        android:tag="27"
+                        android:tag="28"
                         android:text="@string/download"
                         android:textColor="#fff"
                         android:textSize="12sp"

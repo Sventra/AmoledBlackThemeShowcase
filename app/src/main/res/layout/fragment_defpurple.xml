@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -31,10 +32,11 @@
                 android:layout_height="324dp"
                 android:layout_marginTop="15dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/disrespect"
+                android:src="@drawable/saints"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/defpurple" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -46,9 +48,9 @@
                 android:layout_marginEnd="84dp"
                 android:layout_marginRight="84dp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/timeburnernormal"
-                android:text="ABTheme DISRESPECT"
-                android:textColor="@color/disrespect"
+                android:fontFamily="@font/raleway"
+                android:text="ABTheme DefinetlyPurple"
+                android:textColor="@color/defpurple"
                 android:textSize="26sp"
                 app:layout_constraintBottom_toTopOf="@+id/cardView4"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -65,18 +67,15 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="85dp"
                 android:layout_marginRight="85dp"
-                android:layout_marginBottom="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:onClick="downloadParser"
-                android:tag="22"
-                app:cardBackgroundColor="@color/disrespect"
+                android:tag="28"
+                app:cardBackgroundColor="@color/defpurple"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="15dp"
-                app:layout_constraintBottom_toTopOf="@+id/textView4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13"
-                app:layout_constraintVertical_bias="0.0"
-                android:foreground="?android:attr/selectableItemBackground">
+                app:layout_constraintTop_toBottomOf="@+id/textView13">
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
@@ -93,7 +92,7 @@
                         android:layout_marginRight="8dp"
                         android:layout_marginBottom="8dp"
                         android:fontFamily="@font/timeburnernormal"
-                        android:text="@string/version_disrespect"
+                        android:text="@string/download"
                         android:textColor="#000"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -103,78 +102,24 @@
 
             </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:fontFamily="@font/timeburnernormal"
-                android:gravity="center"
-                android:text="@string/lastUpdate_disrespect"
-                android:textSize="14sp"
-
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView4" />
-
             <android.support.v7.widget.CardView
                 android:id="@+id/cardView5"
                 android:layout_width="0dp"
                 android:layout_height="110dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4">
+                app:layout_constraintTop_toBottomOf="@+id/cardView4">
 
                 <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/imageView34"
-                        android:layout_width="50dp"
-                        android:layout_height="55dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="35dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginBottom="50dp"
-                        android:onClick="openDefPurple"
-                        android:scaleType="fitCenter"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toStartOf="@+id/textView14"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView14"
-                        app:srcCompat="@drawable/ic_lens_defpurple" />
-
-                    <TextView
-                        android:id="@+id/textView58"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginBottom="15dp"
-                        android:fontFamily="@font/timeburnernormal"
-                        android:gravity="center"
-                        android:onClick="openDefPurple"
-                        android:text="Definetly\nPurple"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/imageView34"
-                        app:layout_constraintStart_toStartOf="@+id/imageView34"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
                     <TextView
                         android:id="@+id/textView14"
@@ -204,13 +149,13 @@
                         android:layout_marginEnd="8dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginBottom="50dp"
-                        android:onClick="openPhlox"
+                        android:onClick="openDisrespect"
                         android:scaleType="fitCenter"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/imageView7"
-                        app:layout_constraintStart_toEndOf="@+id/imageView34"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView14"
-                        app:srcCompat="@drawable/ic_lens_phlox" />
+                        app:srcCompat="@drawable/ic_square_disrespect" />
 
                     <ImageView
                         android:id="@+id/imageView7"
@@ -222,13 +167,13 @@
                         android:layout_marginEnd="8dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginBottom="50dp"
-                        android:onClick="openSaints"
+                        android:onClick="openPhlox"
                         android:scaleType="fitCenter"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView27"
                         app:layout_constraintStart_toEndOf="@+id/imageView6"
                         app:layout_constraintTop_toBottomOf="@+id/cardView6"
-                        app:srcCompat="@drawable/ic_lens_saints" />
+                        app:srcCompat="@drawable/ic_lens_phlox" />
 
                     <TextView
                         android:id="@+id/textView15"
@@ -242,8 +187,8 @@
                         android:layout_marginBottom="15dp"
                         android:fontFamily="@font/timeburnernormal"
                         android:gravity="center"
-                        android:onClick="openPhlox"
-                        android:text="PHLOX"
+                        android:onClick="openDisrespect"
+                        android:text="DISRESPECT"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@+id/imageView6"
@@ -262,8 +207,8 @@
                         android:layout_marginBottom="15dp"
                         android:fontFamily="@font/timeburnernormal"
                         android:gravity="center"
-                        android:onClick="openSaints"
-                        android:text="SAINTS"
+                        android:onClick="openPhlox"
+                        android:text="PHLOX"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@+id/imageView7"
@@ -286,6 +231,41 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="50dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="17dp"
+                        android:onClick="openSaints"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                        app:srcCompat="@drawable/ic_lens_saints" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/timeburnernormal"
+                        android:gravity="center"
+                        android:onClick="openPhlox"
+                        android:text="SAINTS"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView27"
+                        app:layout_constraintStart_toStartOf="@+id/imageView27"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
                 </android.support.constraint.ConstraintLayout>
             </android.support.v7.widget.CardView>

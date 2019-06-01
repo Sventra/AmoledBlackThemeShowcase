@@ -315,6 +315,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         openNavigation(new DisrespectFragment());
     }
 
+    public void openDefPurple(View view) {
+        getSupportActionBar().setTitle("DefinetlyPurple");
+        openNavigation(new DefPurpleFragment());
+    }
+
+
     public void openGreenSunset(View view) {
         getSupportActionBar().setTitle("Green Sunset");
         openNavigation(new GreenSunsetFragment());

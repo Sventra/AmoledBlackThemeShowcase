@@ -39,6 +39,61 @@
                 tools:layout_editor_absoluteY="63dp">
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/cardViewButton24"
+                    android:layout_width="70dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="openSaints"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewButton23"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView63"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginRight="2dp"
+                            android:scaleType="fitCenter"
+                            app:layout_constraintBottom_toTopOf="@+id/textView64"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_lens_saints" />
+
+                        <TextView
+                            android:id="@+id/textView64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/raleway"
+                            android:gravity="center"
+                            android:text="Saints"
+                            android:textColor="@color/saints"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView63"
+                            app:layout_constraintStart_toStartOf="@+id/imageView63"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView63" />
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
                     android:id="@+id/cardViewButton23"
                     android:layout_width="70dp"
                     android:layout_height="95dp"
@@ -46,7 +101,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginBottom="8dp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="openDisrespect"
+                    android:onClick="openPhlox"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
@@ -73,7 +128,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_square_disrespect" />
+                            app:srcCompat="@drawable/ic_lens_phlox" />
 
                         <TextView
                             android:id="@+id/textView63"
@@ -82,8 +137,8 @@
                             android:layout_marginBottom="8dp"
                             android:fontFamily="@font/raleway"
                             android:gravity="center"
-                            android:text="Disrespect"
-                            android:textColor="@color/disrespect"
+                            android:text="Phlox"
+                            android:textColor="@color/phlox"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="@+id/imageView62"
                             app:layout_constraintStart_toStartOf="@+id/imageView62"
@@ -99,7 +154,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="openSaints"
+                    android:onClick="openDisrespect"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
@@ -125,7 +180,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_lens_saints" />
+                            app:srcCompat="@drawable/ic_square_disrespect" />
 
                         <TextView
                             android:id="@+id/textView61"
@@ -134,8 +189,8 @@
                             android:layout_marginBottom="8dp"
                             android:fontFamily="@font/raleway"
                             android:gravity="center"
-                            android:text="Saints"
-                            android:textColor="@color/saints"
+                            android:text="Disrespect"
+                            android:textColor="@color/disrespect"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="@+id/imageView61"
                             app:layout_constraintStart_toStartOf="@+id/imageView61"
@@ -151,7 +206,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="openPhlox"
+                    android:onClick="openDefPurple"
                     android:visibility="visible"
                     app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="12dp"
@@ -177,7 +232,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/ic_lens_phlox" />
+                            app:srcCompat="@drawable/ic_lens_defpurple" />
 
                         <TextView
                             android:id="@+id/textView60"
@@ -186,8 +241,9 @@
                             android:layout_marginBottom="8dp"
                             android:fontFamily="@font/raleway"
                             android:gravity="center"
-                            android:text="Phlox"
-                            android:textColor="@color/phlox"
+                            android:text="Definetly\nPurple"
+                            android:textColor="@color/defpurple"
+                            android:textSize="10sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="@+id/imageView60"
                             app:layout_constraintStart_toStartOf="@+id/imageView60"

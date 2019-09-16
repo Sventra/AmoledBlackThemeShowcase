@@ -206,13 +206,96 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void downloadParser(final View view) {
         Thread download = new Thread() {
             int partNumber = Integer.parseInt(view.getTag().toString());
-
+            Uri uri;
             public void run() {
                 if (internet_connection()) {
                     try {
-                        metodone();
-                        Uri uri = Uri.parse("https://telegram.dog/ABTheme/" + parts[partNumber]);
-                        newIntent(uri);
+                        switch(partNumber){
+                            default:
+                                metodone();
+                                uri = Uri.parse("https://telegram.dog/ABTheme/" + parts[partNumber]);
+                                newIntent(uri);
+                                break;
+                            case 0:
+                                uri = Uri.parse("https://telegram.dog/addtheme/abtheme");
+                                newIntent(uri);
+                                break;
+                            case 2:
+                                uri = Uri.parse("https://telegram.dog/addtheme/cyanogen");
+                                newIntent(uri);
+                                break;
+                            case 4:
+                                uri = Uri.parse("https://telegram.dog/addtheme/abtorange");
+                                newIntent(uri);
+                                break;
+                            case 5:
+                                uri = Uri.parse("https://telegram.dog/addtheme/oxygen");
+                                newIntent(uri);
+                                break;
+                            case 8:
+                                uri = Uri.parse("https://telegram.dog/addtheme/inverted");
+                                newIntent(uri);
+                                break;
+                            case 9:
+                                uri = Uri.parse("https://telegram.dog/addtheme/invertedinferno");
+                                newIntent(uri);
+                                break;
+                            case 10:
+                                uri = Uri.parse("https://telegram.dog/addtheme/aospextended");
+                                newIntent(uri);
+                                break;
+                            case 11:
+                                uri = Uri.parse("https://telegram.dog/addtheme/steam");
+                                newIntent(uri);
+                                break;
+                            case 12:
+                                uri = Uri.parse("https://telegram.dog/addtheme/monster");
+                                newIntent(uri);
+                                break;
+                            case 13:
+                                uri = Uri.parse("https://telegram.dog/addtheme/league");
+                                newIntent(uri);
+                                break;
+                            case 14:
+                                uri = Uri.parse("https://telegram.dog/addtheme/greenSunset");
+                                newIntent(uri);
+                                break;
+                            case 15:
+                                uri = Uri.parse("https://telegram.dog/addtheme/pixelblue");
+                                newIntent(uri);
+                                break;
+                            case 16:
+                                uri = Uri.parse("https://telegram.dog/addtheme/crimson");
+                                newIntent(uri);
+                                break;
+                            case 17:
+                                uri = Uri.parse("https://telegram.dog/addtheme/quetzal");
+                                newIntent(uri);
+                                break;
+                            case 18:
+                                uri = Uri.parse("https://telegram.dog/addtheme/redleaf");
+                                newIntent(uri);
+                                break;
+                            case 19:
+                                uri = Uri.parse("https://telegram.dog/addtheme/autumn");
+                                newIntent(uri);
+                                break;
+                            case 20:
+                                uri = Uri.parse("https://telegram.dog/addtheme/phlox");
+                                newIntent(uri);
+                                break;
+                            case 21:
+                                uri = Uri.parse("https://telegram.dog/addtheme/abtTeal");
+                                newIntent(uri);
+                                break;
+                            case 22:
+                                uri = Uri.parse("https://telegram.dog/addtheme/disrespect");
+                                newIntent(uri);
+                                break;
+
+
+                        }
+
                     } catch (Exception e) {
                         e.printStackTrace();
                         System.out.println("Exception occurred " + e);

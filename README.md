@@ -14,3 +14,6 @@
 + Tap **Download**
 + Open with Telegram, Telegram X or any compatible client
 + **Apply!**
+
+
+<a align="center" href="https://play.google.com/store/apps/details?id=sventrapopizz.amoledblackthemeshowcase">Download now!</a>

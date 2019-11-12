@@ -16,4 +16,5 @@
 + **Apply!**
 
 
-<a align="center" href="https://play.google.com/store/apps/details?id=sventrapopizz.amoledblackthemeshowcase">Download now!</a>
+
+# <a align="center" href="https://play.google.com/store/apps/details?id=sventrapopizz.amoledblackthemeshowcase">Download now!</a>

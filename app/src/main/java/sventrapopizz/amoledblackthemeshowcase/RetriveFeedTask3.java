@@ -15,7 +15,7 @@ public class RetriveFeedTask3 extends AsyncTask {
         try {
             Document doc = Jsoup.connect("https://t.me/amoledblackthemeshowcasesupport/13?embed=1").get();
             String acquired = doc.select("div.tgme_widget_message_text").text();
-            tgxEnabled = Boolean.valueOf(acquired);
+            tgxEnabled = Boolean.parseBoolean(acquired);
             return tgxEnabled;
         } catch (IOException e) {
             e.printStackTrace();

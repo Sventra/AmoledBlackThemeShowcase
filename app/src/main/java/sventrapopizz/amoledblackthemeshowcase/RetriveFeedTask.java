@@ -12,8 +12,7 @@ public class RetriveFeedTask extends AsyncTask {
     protected Object doInBackground(Object[] objects) {
         try {
             Document doc = Jsoup.connect("https://telegram.dog/amoledblackthemeshowcasesupport/8?embed=1").get();
-            String stringa2 = doc.select("div.tgme_widget_message_text").text();
-            return stringa2;
+            return doc.select("div.tgme_widget_message_text").text();
         } catch (IOException e) {
             e.printStackTrace();
         }

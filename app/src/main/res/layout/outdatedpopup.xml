@@ -44,7 +44,7 @@
             android:layout_marginRight="8dp"
             android:fontFamily="@font/raleway_bold"
             android:gravity="center"
-            android:text="APP OUTDATED"
+            android:text="PLEASE UPDATE"
             android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

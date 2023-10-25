@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository has been archived as it's not needed anymore given that Telegram now uses cloud themes and they get synced automatically.
+
 <div align="center">
     <h1>Amoled Black Theme Showcase</h1>
     <p>Dark-Theme everything!</p>
